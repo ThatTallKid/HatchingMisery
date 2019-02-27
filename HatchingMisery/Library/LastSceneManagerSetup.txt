@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Venus/SCE_ChickAITest.unity
+- path: Assets/Tegan/Scenes/HawkTest.unity
   isLoaded: 1
   isActive: 1
