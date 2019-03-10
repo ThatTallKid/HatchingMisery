@@ -2511,7 +2511,7 @@ PrefabInstance:
     - target: {fileID: 1730179849401268556, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
       propertyPath: m_Name
-      value: Shelter - Tin Shed
+      value: Cover - Coop
       objectReference: {fileID: 0}
     - target: {fileID: 1730179849401268552, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}

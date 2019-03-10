@@ -420,7 +420,7 @@ PrefabInstance:
     - target: {fileID: 1730179849401268556, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
       propertyPath: m_Name
-      value: Shelter (4)
+      value: Cover - Cornfield
       objectReference: {fileID: 0}
     - target: {fileID: 1730179849401268552, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
@@ -988,7 +988,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &842205798
 PrefabInstance:
@@ -1000,7 +1000,7 @@ PrefabInstance:
     - target: {fileID: 1730179849401268556, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
       propertyPath: m_Name
-      value: Shelter
+      value: Cover - Cornfield
       objectReference: {fileID: 0}
     - target: {fileID: 1730179849401268552, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
@@ -1200,11 +1200,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6090103381356967918, guid: 3759c3674fe5cd641955b76fbe8d75bf,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -39.4
-      objectReference: {fileID: 0}
     - target: {fileID: 6090103380508568446, guid: 3759c3674fe5cd641955b76fbe8d75bf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1234,6 +1229,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -39.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090103381356967918, guid: 3759c3674fe5cd641955b76fbe8d75bf,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -39.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3759c3674fe5cd641955b76fbe8d75bf, type: 3}
@@ -1401,7 +1401,7 @@ PrefabInstance:
     - target: {fileID: 1730179849401268556, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
       propertyPath: m_Name
-      value: Shelter (2)
+      value: Cover - Cornfield
       objectReference: {fileID: 0}
     - target: {fileID: 1730179849401268552, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
@@ -1544,7 +1544,7 @@ PrefabInstance:
     - target: {fileID: 1730179849401268556, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
       propertyPath: m_Name
-      value: Shelter (1)
+      value: Cover - Cornfield
       objectReference: {fileID: 0}
     - target: {fileID: 1730179849401268552, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
@@ -1618,7 +1618,7 @@ PrefabInstance:
     - target: {fileID: 1470302418823161032, guid: e3440c459605bbe4c89d562bd20fd6fc,
         type: 3}
       propertyPath: m_Name
-      value: Impassable
+      value: 'LOG PILE FOR BROKEN FENCE? '
       objectReference: {fileID: 0}
     - target: {fileID: 7678283925863637876, guid: e3440c459605bbe4c89d562bd20fd6fc,
         type: 3}
@@ -1697,7 +1697,7 @@ PrefabInstance:
     - target: {fileID: 1730179849401268556, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
       propertyPath: m_Name
-      value: Shelter (6)
+      value: Cover - Cornfield
       objectReference: {fileID: 0}
     - target: {fileID: 1730179849401268552, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
@@ -2158,7 +2158,7 @@ PrefabInstance:
     - target: {fileID: 1730179849401268556, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
       propertyPath: m_Name
-      value: Shelter (5)
+      value: Cover - Cornfield
       objectReference: {fileID: 0}
     - target: {fileID: 1730179849401268552, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
@@ -2232,7 +2232,7 @@ PrefabInstance:
     - target: {fileID: 1730179849401268556, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
       propertyPath: m_Name
-      value: Shelter (3)
+      value: Cover - Cornfield
       objectReference: {fileID: 0}
     - target: {fileID: 1730179849401268552, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}

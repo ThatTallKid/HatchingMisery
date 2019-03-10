@@ -344,7 +344,7 @@ PrefabInstance:
     - target: {fileID: 1730179849401268556, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
       propertyPath: m_Name
-      value: Shelter
+      value: Cover - Stables
       objectReference: {fileID: 0}
     - target: {fileID: 1730179849401268552, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
@@ -655,7 +655,7 @@ PrefabInstance:
     - target: {fileID: 1730179849401268556, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
       propertyPath: m_Name
-      value: Shelter (6)
+      value: Cover - Bush
       objectReference: {fileID: 0}
     - target: {fileID: 1730179849401268552, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
@@ -1313,7 +1313,7 @@ PrefabInstance:
     - target: {fileID: 1730179849401268556, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
       propertyPath: m_Name
-      value: Shelter (2)
+      value: Cover - Bush
       objectReference: {fileID: 0}
     - target: {fileID: 1730179849401268552, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
@@ -1693,7 +1693,7 @@ PrefabInstance:
     - target: {fileID: 1730179849401268556, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
       propertyPath: m_Name
-      value: Shelter (3)
+      value: Cover - Bush
       objectReference: {fileID: 0}
     - target: {fileID: 1730179849401268552, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
@@ -1856,7 +1856,7 @@ PrefabInstance:
     - target: {fileID: 1730179849401268556, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
       propertyPath: m_Name
-      value: Shelter (1)
+      value: Cover - Water Tanks
       objectReference: {fileID: 0}
     - target: {fileID: 1730179849401268552, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
@@ -2100,7 +2100,7 @@ PrefabInstance:
     - target: {fileID: 1730179849401268556, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
       propertyPath: m_Name
-      value: Shelter (5)
+      value: Cover - Bush
       objectReference: {fileID: 0}
     - target: {fileID: 1730179849401268552, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
@@ -2915,7 +2915,7 @@ PrefabInstance:
     - target: {fileID: 1730179849401268556, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
       propertyPath: m_Name
-      value: Shelter - Tin Shed
+      value: Cover -Chicken Coop
       objectReference: {fileID: 0}
     - target: {fileID: 1730179849401268552, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
@@ -3687,7 +3687,7 @@ PrefabInstance:
     - target: {fileID: 1730179849401268556, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
       propertyPath: m_Name
-      value: Shelter (4)
+      value: Cover - Bush
       objectReference: {fileID: 0}
     - target: {fileID: 1730179849401268552, guid: 8be70b2c005284449b14f2e20340ad19,
         type: 3}
@@ -3897,7 +3897,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 48
+  m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &1979650889
 PrefabInstance:
