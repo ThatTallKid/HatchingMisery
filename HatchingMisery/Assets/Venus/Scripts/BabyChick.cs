@@ -5,6 +5,9 @@ using UnityEngine;
 public class BabyChick : MonoBehaviour
 {
     public float FollowSpeed;
+    public float feedtime;
+    public int FeedTotal;
+   
 
     public enum ChickState
     {
@@ -32,12 +35,23 @@ public class BabyChick : MonoBehaviour
                 transform.Translate(ToChicken * FollowSpeed * Time.deltaTime);
                 break;
             case ChickState.Feeding:
-                // Do whatever
+                feedtime = feedtime + Time.deltaTime * 2;
                 break;
             case ChickState.Wandering:
                 transform.Translate(new Vector3(Random.Range(-2, 2), 0, Random.Range(-2, 2)) * FollowSpeed * Time.deltaTime);
                 break;
         }
+
+        if (feedtime > 4)
+        {
+            CurrentState = ChickState.Following;
+
+            FeedTotal = FeedTotal + 10;
+            feedtime = 0;
+                       
+        }
+
+
     }
 
     public void OnTriggerEnter(Collider other)

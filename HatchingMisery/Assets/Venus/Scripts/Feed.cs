@@ -4,4 +4,27 @@ using UnityEngine;
 public class Feed : MonoBehaviour   // Venus
 {
     public int GrainAmount;
+    public float feedtime;
+    public bool feeding;
+
+    void Update()
+    {
+        if (feeding == true)
+        {
+            feedtime = feedtime + Time.deltaTime * 2;
+        }
+
+        if (feedtime > 4)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public void OnTriggerEnter (Collider other)
+    {
+        if (other.GetComponent<BabyChick>())
+        {
+            feeding = true;
+        }
+    }
 }
