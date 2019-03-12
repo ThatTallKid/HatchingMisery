@@ -5,6 +5,10 @@ using UnityEngine;
 public class BabyChick : MonoBehaviour
 {
     public float FollowSpeed;
+    public float feedtime;
+    public int FeedTotal;
+    public int Chicksleft;
+   
 
     public enum ChickState
     {
@@ -18,8 +22,12 @@ public class BabyChick : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Chicksleft = 10;
         CurrentState = ChickState.Following;
         MotherHen = FindObjectOfType<Chicken>().gameObject;
+        PlayerPrefs.SetInt("feedtotal", FeedTotal);
+        PlayerPrefs.SetInt("chicksleft", Chicksleft);
+        
     }
 
     // Update is called once per frame
@@ -32,12 +40,26 @@ public class BabyChick : MonoBehaviour
                 transform.Translate(ToChicken * FollowSpeed * Time.deltaTime);
                 break;
             case ChickState.Feeding:
-                // Do whatever
+                feedtime = feedtime + Time.deltaTime;
                 break;
             case ChickState.Wandering:
                 transform.Translate(new Vector3(Random.Range(-2, 2), 0, Random.Range(-2, 2)) * FollowSpeed * Time.deltaTime);
                 break;
         }
+
+        if (feedtime > 4)
+        {
+            CurrentState = ChickState.Following;
+
+            FeedTotal += 10;
+            feedtime = 0;
+
+            PlayerPrefs.SetInt("feedtotal", FeedTotal);
+            Debug.Log("saving score as " + PlayerPrefs.GetInt("feedtotal"));
+
+        }
+
+
     }
 
     public void OnTriggerEnter(Collider other)
