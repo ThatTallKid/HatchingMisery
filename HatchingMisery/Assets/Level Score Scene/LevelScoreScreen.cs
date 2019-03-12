@@ -15,14 +15,24 @@ public class LevelScoreScreen : MonoBehaviour
     public string strchicksleft;
     public GameObject Loose;
 
-    void Update()
+    void Start()
+    {
+        CalcScore();
+    }
+
+    public void CalcScore()
     {
         Debug.Log("i found a number " + PlayerPrefs.GetInt("feedtotal"));
-        feedscore = PlayerPrefs.GetInt("feedtotal");
+        PlayerPrefs.SetInt("feedtotal",PlayerPrefs.GetInt("feedtotal")+PlayerPrefs.GetInt("currentfeed"));
+        feedscore = PlayerPrefs.GetInt("currentfeed");
         intchicksleft = PlayerPrefs.GetInt("chicksleft");
         
 
-        deadchicks = ((intchicksleft * 10) - feedscore) / 10; 
+        // this was sometimes returning negative numbers thanks to the number of feeding zones being variable
+        if (intchicksleft * 10 > feedscore)
+        {
+            deadchicks = Mathf.FloorToInt(Mathf.Min((float)intchicksleft ,  (float)feedscore/10)); 
+        }
         
       
         

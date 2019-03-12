@@ -5,11 +5,34 @@ using UnityEngine;
 public class HenMovement : MonoBehaviour
 {
     public Rigidbody body;
+    public int chickamount;
+    public GameObject ChickPrefab;
     // Start is called before the first frame update
     void Start()
     {
         // only get the gameobject once rather than once per frame
         body = gameObject.GetComponent<Rigidbody>();
+        GameTime tempgame = null;
+        if (GameObject.Find("Game timer"))
+        {
+            tempgame = GameObject.Find("Game timer").GetComponent<GameTime>();
+            GameTime.checklevel();
+            chickamount = PlayerPrefs.GetInt("chicksleft");
+        }
+        else
+        {
+            chickamount = 10;
+        }
+        // TODO manage the living chicks for first level somehow, ignore player perfs for living chicks in tutorial
+        
+        for (int i = 0; i < chickamount; i++)
+        {
+            GameObject temp = Instantiate(ChickPrefab,transform.position + new Vector3(Random.Range(-2,2),0,Random.Range(-2,2)),Quaternion.identity);
+            if (tempgame)
+            {
+                tempgame.Chicks.Add(temp);
+            }
+        }
     }
 
     // Update is called once per frame

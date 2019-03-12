@@ -124,6 +124,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 2554998869042815786}
+  chickamount: 0
+  ChickPrefab: {fileID: 2582056615749743912, guid: 21c5717a07325aa40bce4b1444eea83d,
+    type: 3}
 --- !u!114 &425687439
 MonoBehaviour:
   m_ObjectHideFlags: 0

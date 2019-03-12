@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1734669060}
   - component: {fileID: 1734669059}
   - component: {fileID: 1734669058}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,8 +112,8 @@ GameObject:
   - component: {fileID: 1994399392}
   - component: {fileID: 1994399391}
   - component: {fileID: 1994399390}
-  m_Layer: 0
-  m_Name: Hen 1
+  m_Layer: 10
+  m_Name: Hen V2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -221,6 +221,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 1994399392}
+  chickamount: 0
+  ChickPrefab: {fileID: 2582056615749743912, guid: 21c5717a07325aa40bce4b1444eea83d,
+    type: 3}
 --- !u!114 &1994399390
 MonoBehaviour:
   m_ObjectHideFlags: 0
