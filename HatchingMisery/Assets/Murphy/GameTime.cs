@@ -15,7 +15,7 @@ public class GameTime : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gametime = gametime + Time.deltaTime * 2;
+        gametime = gametime + Time.deltaTime * 1;
 
         if( gametime > 60)
         {
