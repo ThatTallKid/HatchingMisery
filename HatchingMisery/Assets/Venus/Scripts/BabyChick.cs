@@ -7,6 +7,7 @@ public class BabyChick : MonoBehaviour
     public float FollowSpeed;
     public float feedtime;
     public int FeedTotal;
+    public int Chicksleft;
    
 
     public enum ChickState
@@ -21,9 +22,12 @@ public class BabyChick : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Chicksleft = 10;
         CurrentState = ChickState.Following;
         MotherHen = FindObjectOfType<Chicken>().gameObject;
         PlayerPrefs.SetInt("feedtotal", FeedTotal);
+        PlayerPrefs.SetInt("chicksleft", Chicksleft);
+        
     }
 
     // Update is called once per frame
@@ -36,7 +40,7 @@ public class BabyChick : MonoBehaviour
                 transform.Translate(ToChicken * FollowSpeed * Time.deltaTime);
                 break;
             case ChickState.Feeding:
-                feedtime = feedtime + Time.deltaTime * 2;
+                feedtime = feedtime + Time.deltaTime;
                 break;
             case ChickState.Wandering:
                 transform.Translate(new Vector3(Random.Range(-2, 2), 0, Random.Range(-2, 2)) * FollowSpeed * Time.deltaTime);
@@ -52,6 +56,7 @@ public class BabyChick : MonoBehaviour
 
             PlayerPrefs.SetInt("feedtotal", FeedTotal);
             Debug.Log("saving score as " + PlayerPrefs.GetInt("feedtotal"));
+
         }
 
 

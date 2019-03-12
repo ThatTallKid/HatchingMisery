@@ -11,7 +11,7 @@ public class Feed : MonoBehaviour   // Venus
     {
         if (feeding == true)
         {
-            feedtime = feedtime + Time.deltaTime * 2;
+            feedtime = feedtime + Time.deltaTime;
         }
 
         if (feedtime > 4)
@@ -22,7 +22,7 @@ public class Feed : MonoBehaviour   // Venus
 
     public void OnTriggerEnter (Collider other)
     {
-        if (other.GetComponent<BabyChick>())
+        if (other.gameObject.CompareTag("Chick"))
         {
             feeding = true;
         }

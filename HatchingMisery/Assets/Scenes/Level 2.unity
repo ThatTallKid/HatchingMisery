@@ -130,6 +130,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chick (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2582056615749743912, guid: 729b3fe2710be2147af5042c98572288,
+        type: 3}
+      propertyPath: m_TagString
+      value: Chick
+      objectReference: {fileID: 0}
     - target: {fileID: 2582056615749743909, guid: 729b3fe2710be2147af5042c98572288,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -804,6 +809,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chick (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2582056615749743912, guid: 729b3fe2710be2147af5042c98572288,
+        type: 3}
+      propertyPath: m_TagString
+      value: Chick
+      objectReference: {fileID: 0}
     - target: {fileID: 2582056615749743909, guid: 729b3fe2710be2147af5042c98572288,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1137,6 +1147,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chick (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2582056615749743912, guid: 729b3fe2710be2147af5042c98572288,
+        type: 3}
+      propertyPath: m_TagString
+      value: Chick
+      objectReference: {fileID: 0}
     - target: {fileID: 2582056615749743909, guid: 729b3fe2710be2147af5042c98572288,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1333,7 +1348,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82cb4d4c2a967024eb7ba40e00b63d84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ChicksLeft: 0
   gametime: 0
+  chick1: {fileID: 0}
+  chick2: {fileID: 0}
+  chick3: {fileID: 0}
+  chick4: {fileID: 0}
+  chick5: {fileID: 0}
+  chick6: {fileID: 0}
+  chick7: {fileID: 0}
+  chick8: {fileID: 0}
+  chick9: {fileID: 0}
+  chick10: {fileID: 0}
 --- !u!1001 &658056290
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1625,6 +1651,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chick (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2582056615749743912, guid: 729b3fe2710be2147af5042c98572288,
+        type: 3}
+      propertyPath: m_TagString
+      value: Chick
       objectReference: {fileID: 0}
     - target: {fileID: 2582056615749743909, guid: 729b3fe2710be2147af5042c98572288,
         type: 3}
@@ -1948,6 +1979,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chick (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2582056615749743912, guid: 729b3fe2710be2147af5042c98572288,
+        type: 3}
+      propertyPath: m_TagString
+      value: Chick
       objectReference: {fileID: 0}
     - target: {fileID: 2582056615749743909, guid: 729b3fe2710be2147af5042c98572288,
         type: 3}
@@ -2753,6 +2789,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chick (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 2582056615749743912, guid: 729b3fe2710be2147af5042c98572288,
+        type: 3}
+      propertyPath: m_TagString
+      value: Chick
+      objectReference: {fileID: 0}
     - target: {fileID: 2582056615749743909, guid: 729b3fe2710be2147af5042c98572288,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3243,6 +3284,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chick (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2582056615749743912, guid: 729b3fe2710be2147af5042c98572288,
+        type: 3}
+      propertyPath: m_TagString
+      value: Chick
       objectReference: {fileID: 0}
     - target: {fileID: 2582056615749743909, guid: 729b3fe2710be2147af5042c98572288,
         type: 3}
@@ -4433,6 +4479,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chick (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 2582056615749743912, guid: 729b3fe2710be2147af5042c98572288,
+        type: 3}
+      propertyPath: m_TagString
+      value: Chick
+      objectReference: {fileID: 0}
     - target: {fileID: 2582056615749743909, guid: 729b3fe2710be2147af5042c98572288,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4518,6 +4569,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chick (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2582056615749743912, guid: 729b3fe2710be2147af5042c98572288,
+        type: 3}
+      propertyPath: m_TagString
+      value: Chick
       objectReference: {fileID: 0}
     - target: {fileID: 2582056615749743909, guid: 729b3fe2710be2147af5042c98572288,
         type: 3}
@@ -5185,6 +5241,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chick
       objectReference: {fileID: 0}
+    - target: {fileID: 2582056615749743912, guid: 729b3fe2710be2147af5042c98572288,
+        type: 3}
+      propertyPath: m_TagString
+      value: Chick
+      objectReference: {fileID: 0}
     - target: {fileID: 2582056615749743909, guid: 729b3fe2710be2147af5042c98572288,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5239,6 +5300,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2582056615749743913, guid: 729b3fe2710be2147af5042c98572288,
+        type: 3}
+      propertyPath: Chicksleft
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7293296601738226837, guid: 729b3fe2710be2147af5042c98572288,
+        type: 3}
+      propertyPath: m_TagString
+      value: Chick
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 729b3fe2710be2147af5042c98572288, type: 3}

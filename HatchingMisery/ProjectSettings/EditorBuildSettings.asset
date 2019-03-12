@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Level Score Scene/LevelScoreScreen.unity
     guid: 3f61a36d8cd223649948c3d70046acd1
+  - enabled: 1
+    path: Assets/Scenes/Level 3.unity
+    guid: d2bec458425d425448958f3a9675f012
+  - enabled: 1
+    path: Assets/Level Score Scene/LevelScr2.unity
+    guid: a218e7d0cf7a0e64d9a9d79812df049d
   m_configObjects: {}

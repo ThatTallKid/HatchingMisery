@@ -13,54 +13,30 @@ public class LevelScoreScreen : MonoBehaviour
     public Text txtchicksLeft;
     public int intchicksleft;
     public string strchicksleft;
+    public GameObject Loose;
 
     void Update()
     {
         Debug.Log("i found a number " + PlayerPrefs.GetInt("feedtotal"));
         feedscore = PlayerPrefs.GetInt("feedtotal");
-        if(feedscore > 90)
-        {
-            deadchicks = 0;
-        }
-        if (feedscore < 80)
-        {
-            deadchicks = 1;
-        }
-        if (feedscore < 70)
-        {
-            deadchicks = 2;
-        }
-        if (feedscore < 60)
-        {
-            deadchicks = 3;
-        }
-        if (feedscore < 50)
-        {
-            deadchicks = 4;
-        }
-        if (feedscore < 40)
-        {
-            deadchicks = 5;
-        }
-        if (feedscore < 30)
-        {
-            deadchicks = 6;
-        }
-        if (feedscore < 20)
-        {
-            deadchicks = 7;
-        }
-        if (feedscore < 10)
-        {
-            deadchicks = 8;
-        }
-       // deadchicks.ToString(strdeadchicks);
+        intchicksleft = PlayerPrefs.GetInt("chicksleft");
+        
+
+        deadchicks = ((intchicksleft * 10) - feedscore) / 10; 
+        
+      
         
         txtdeadchicks.text = deadchicks.ToString();
 
         intchicksleft = 10 - deadchicks;
-     //   intchicksleft.ToString(strchicksleft);
+     
         txtchicksLeft.text = intchicksleft.ToString();
+        if (deadchicks < 1)
+        {
+            Loose.SetActive (true);
+        }
+
+        PlayerPrefs.SetInt("chicksleft", intchicksleft);
     }
     public void NextLevel()
     {
