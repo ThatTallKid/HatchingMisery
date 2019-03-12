@@ -23,6 +23,7 @@ public class BabyChick : MonoBehaviour
     {
         CurrentState = ChickState.Following;
         MotherHen = FindObjectOfType<Chicken>().gameObject;
+        
     }
 
     // Update is called once per frame
@@ -48,7 +49,7 @@ public class BabyChick : MonoBehaviour
 
             FeedTotal = FeedTotal + 10;
             feedtime = 0;
-                       
+            PlayerPrefs.SetInt("feedtotal", FeedTotal);
         }
 
 
