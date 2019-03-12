@@ -47,9 +47,11 @@ public class BabyChick : MonoBehaviour
         {
             CurrentState = ChickState.Following;
 
-            FeedTotal = FeedTotal + 10;
+            FeedTotal += 10;
             feedtime = 0;
-            PlayerPrefs.Save();
+
+            PlayerPrefs.SetInt("feedtotal", FeedTotal);
+            Debug.Log("saving score as " + PlayerPrefs.GetInt("feedtotal"));
         }
 
 

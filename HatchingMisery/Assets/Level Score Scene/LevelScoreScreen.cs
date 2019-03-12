@@ -14,8 +14,9 @@ public class LevelScoreScreen : MonoBehaviour
     public int intchicksleft;
     public string strchicksleft;
 
-    void Start()
+    void Update()
     {
+        Debug.Log("i found a number " + PlayerPrefs.GetInt("feedtotal"));
         feedscore = PlayerPrefs.GetInt("feedtotal");
         if(feedscore > 90)
         {
@@ -53,12 +54,13 @@ public class LevelScoreScreen : MonoBehaviour
         {
             deadchicks = 8;
         }
-        deadchicks.ToString(strdeadchicks);
-        txtdeadchicks.text = strdeadchicks;
+       // deadchicks.ToString(strdeadchicks);
+        
+        txtdeadchicks.text = deadchicks.ToString();
 
         intchicksleft = 10 - deadchicks;
-        intchicksleft.ToString(strchicksleft);
-        txtchicksLeft.text = strchicksleft;
+     //   intchicksleft.ToString(strchicksleft);
+        txtchicksLeft.text = intchicksleft.ToString();
     }
     public void NextLevel()
     {
