@@ -12,10 +12,9 @@ public class HenMovement : MonoBehaviour
     {
         // only get the gameobject once rather than once per frame
         body = gameObject.GetComponent<Rigidbody>();
-        GameTime tempgame = null;
-        if (GameObject.Find("Game timer"))
+        GameTime tempgame = FindObjectOfType<GameTime>();
+        if (tempgame)
         {
-            tempgame = GameObject.Find("Game timer").GetComponent<GameTime>();
             GameTime.checklevel();
             chickamount = PlayerPrefs.GetInt("chicksleft");
         }
