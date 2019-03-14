@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2554998869042815786}
   - component: {fileID: 4300446175403573154}
   - component: {fileID: 425687439}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ GameObject:
   - component: {fileID: 3572533789992697284}
   - component: {fileID: 7227942519393483245}
   - component: {fileID: 7053567821851931869}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
