@@ -4356,10 +4356,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hen
       objectReference: {fileID: 0}
-    - target: {fileID: 1994399389, guid: a9ff92a055dd7c64f98985bf35c72514, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 1994399396, guid: a9ff92a055dd7c64f98985bf35c72514, type: 3}
       propertyPath: m_LocalPosition.x
       value: -34.9015
@@ -4403,10 +4399,6 @@ PrefabInstance:
     - target: {fileID: 1994399396, guid: a9ff92a055dd7c64f98985bf35c72514, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1734669056, guid: a9ff92a055dd7c64f98985bf35c72514, type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9ff92a055dd7c64f98985bf35c72514, type: 3}
