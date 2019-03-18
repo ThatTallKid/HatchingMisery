@@ -9,7 +9,6 @@ public class HawkModel : HawkBase
 
     public HawkBase currentState;
 
-
     public void ChangeState(HawkBase newState)
     {
         newState.Enter();
@@ -21,13 +20,7 @@ public class HawkModel : HawkBase
         // On awake, activate patrol state (for now)
         ChangeState(patrolState);
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     public void Update()
     {
         if (currentState != null)

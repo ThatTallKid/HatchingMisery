@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2371316526339919734}
   - component: {fileID: 5395532075247314481}
   - component: {fileID: 6867398473517931322}
-  - component: {fileID: 7828610391895557132}
+  - component: {fileID: 974518368373621916}
   m_Layer: 0
   m_Name: _Hawk_
   m_TagString: Untagged
@@ -137,9 +137,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swoopState: {fileID: 0}
-  patrolState: {fileID: 7828610391895557132}
+  patrolState: {fileID: 0}
   currentState: {fileID: 0}
---- !u!114 &7828610391895557132
+--- !u!114 &974518368373621916
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -151,8 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ef18de093f2ac340b95d891b68ca04c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  horizontalSpeed: 0
-  verticalSpeed: 0
-  amplitude: 0
-  startPos: {x: 0, y: 0, z: 0}
+  speed: 0
+  turnSpeed: 0
+  hoverForce: 65
+  hoverHeight: 3.5
