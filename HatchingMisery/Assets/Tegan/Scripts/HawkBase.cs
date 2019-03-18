@@ -2,20 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HawkBase : MonoBehaviour
+namespace Hawk
 {
-    public virtual void Enter()
+    public class HawkBase : MonoBehaviour
     {
+        public Rigidbody hawkRigidBody;
         
-    }
-    
-    public virtual void Execute()
-    {
-        
-    }
+        public virtual void Enter()
+        {
+            hawkRigidBody = GetComponent<Rigidbody>();
+        }
 
-    public virtual void Exit()
-    {
-        
+        public virtual void Execute()
+        {
+
+        }
+
+        public virtual void Exit()
+        {
+
+        }
     }
 }

@@ -389,6 +389,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ef18de093f2ac340b95d891b68ca04c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &1891827329 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 2371316526339919734, guid: 6f896392cd8ad0b4bab34e20ce475ac3,
+    type: 3}
+  m_PrefabInstance: {fileID: 832688202629964710}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1962591384
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,6 +586,11 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5395532075247314481, guid: 6f896392cd8ad0b4bab34e20ce475ac3,
+        type: 3}
+      propertyPath: hawkRigidBody
+      value: 
+      objectReference: {fileID: 1891827329}
     - target: {fileID: 6867398473517931322, guid: 6f896392cd8ad0b4bab34e20ce475ac3,
         type: 3}
       propertyPath: m_Enabled
@@ -590,6 +601,11 @@ PrefabInstance:
       propertyPath: patrolState
       value: 
       objectReference: {fileID: 1891827326}
+    - target: {fileID: 6867398473517931322, guid: 6f896392cd8ad0b4bab34e20ce475ac3,
+        type: 3}
+      propertyPath: hawkRigidBody
+      value: 
+      objectReference: {fileID: 1891827329}
     m_RemovedComponents:
     - {fileID: 7828610391895557132, guid: 6f896392cd8ad0b4bab34e20ce475ac3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6f896392cd8ad0b4bab34e20ce475ac3, type: 3}

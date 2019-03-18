@@ -2,30 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HawkModel : HawkBase
+namespace Hawk
 {
-    public HawkBase swoopState;
-    public HawkBase patrolState;
-
-    public HawkBase currentState;
-
-    public void ChangeState(HawkBase newState)
+    public class HawkModel : HawkBase
     {
-        newState.Enter();
-        currentState = newState;
-    }
+        public HawkBase swoopState;
+        public HawkBase patrolState;
 
-    private void Awake()
-    {
-        // On awake, activate patrol state (for now)
-        ChangeState(patrolState);
-    }
+        public HawkBase currentState;
 
-    public void Update()
-    {
-        if (currentState != null)
+        public void ChangeState(HawkBase newState)
         {
-            currentState.Execute();
+            newState.Enter();
+            currentState = newState;
+        }
+
+        private void Awake()
+        {
+            // On awake, activate patrol state (for now)
+            ChangeState(patrolState);
+        }
+
+        public void Update()
+        {
+            if (currentState != null)
+            {
+                currentState.Execute();
+            }
         }
     }
 }
