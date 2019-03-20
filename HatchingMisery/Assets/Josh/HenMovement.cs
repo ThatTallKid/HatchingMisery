@@ -14,6 +14,7 @@ public class HenMovement : MonoBehaviour
     void Start()
     {
         Nav = gameObject.GetComponent<NavMeshAgent>();
+        Nav.speed = 5;
         // only get the gameobject once rather than once per frame
         body = gameObject.GetComponent<Rigidbody>();
         GameTime tempgame = FindObjectOfType<GameTime>();
@@ -41,7 +42,6 @@ public class HenMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Nav.speed = 5;
         Nav.isStopped = false;
         
         Nav.destination = transform.position + new Vector3(Input.GetAxis("Vertical"),0,-Input.GetAxis("Horizontal")).normalized;
