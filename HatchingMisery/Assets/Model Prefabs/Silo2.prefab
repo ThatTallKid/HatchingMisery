@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2364507342098658661}
   - component: {fileID: 4517221079543045846}
   - component: {fileID: 6428057409160541878}
+  - component: {fileID: 202822706389442934}
   m_Layer: 0
   m_Name: Silo2
   m_TagString: Untagged
@@ -97,3 +98,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!136 &202822706389442934
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4914160103578772999}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.053756222
+  m_Height: 0.25548807
+  m_Direction: 1
+  m_Center: {x: 0.04278663, y: 0.057224188, z: 0.004932399}

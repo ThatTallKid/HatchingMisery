@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2044928812}
   - component: {fileID: 2044928811}
   - component: {fileID: 2044928810}
+  - component: {fileID: 816033610328505489}
   m_Layer: 0
   m_Name: Windmill
   m_TagString: Untagged
@@ -78,3 +79,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &816033610328505489
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044928809}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.11824097, y: 0.33636233, z: 0.113963306}
+  m_Center: {x: 0.054640923, y: 0.16818117, z: 0.055176232}

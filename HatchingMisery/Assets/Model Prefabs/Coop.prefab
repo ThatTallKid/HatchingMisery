@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1071937955}
   - component: {fileID: 1071937954}
   - component: {fileID: 1071937953}
+  - component: {fileID: 7611558357204089083}
   m_Layer: 0
   m_Name: Coop
   m_TagString: Untagged
@@ -77,3 +78,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &7611558357204089083
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071937952}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.052520044, y: 0.07923684, z: 0.057691146}
+  m_Center: {x: 0.01644385, y: 0.03961842, z: 0.021734577}

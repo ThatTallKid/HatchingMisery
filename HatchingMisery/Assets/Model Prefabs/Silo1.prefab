@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5135394408205017796}
   - component: {fileID: 3036217342889415524}
   - component: {fileID: 6078380665036044047}
+  - component: {fileID: 2122881127582717084}
+  - component: {fileID: 403463227542277621}
   m_Layer: 0
   m_Name: Silo1
   m_TagString: Untagged
@@ -26,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5175470256326185933}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.31, y: 0.5, z: 17.86}
+  m_LocalPosition: {x: -16.4, y: 0.5, z: 17.86}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,3 +79,30 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &2122881127582717084
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5175470256326185933}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07614075, y: 0.1568109, z: 0.053462714}
+  m_Center: {x: 0.034269027, y: 0.07840545, z: -0.023191184}
+--- !u!136 &403463227542277621
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5175470256326185933}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.056289576
+  m_Height: 0.29099044
+  m_Direction: 1
+  m_Center: {x: 0.042412166, y: 0.06861389, z: -0.08957424}

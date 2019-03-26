@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 7286855717971198841}
   - component: {fileID: 8780296701079012131}
   - component: {fileID: 538688710011763802}
+  - component: {fileID: 737111920319535814}
+  - component: {fileID: 1121781315044955803}
+  - component: {fileID: 5301042901442608607}
   m_Layer: 0
   m_Name: Tractor1
   m_TagString: Untagged
@@ -77,3 +80,42 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &737111920319535814
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4226795088236050154}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.100053966, y: 0.023405127, z: 0.033941038}
+  m_Center: {x: -0.022813424, y: 0.034003995, z: -0.025063781}
+--- !u!65 &1121781315044955803
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4226795088236050154}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.023799276, y: 0.023871498, z: 0.05532113}
+  m_Center: {x: -0.054243386, y: 0.011763372, z: -0.024316583}
+--- !u!65 &5301042901442608607
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4226795088236050154}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.029851303, y: 0.026750373, z: 0.05532113}
+  m_Center: {x: 0.00062107027, y: 0.01320281, z: -0.024316583}

@@ -11,6 +11,10 @@ GameObject:
   - component: {fileID: 7879321888779746364}
   - component: {fileID: 4063950385369486644}
   - component: {fileID: 3061577241175686632}
+  - component: {fileID: 2661455849781155316}
+  - component: {fileID: 7739435203050257627}
+  - component: {fileID: 7435424563594532892}
+  - component: {fileID: 2418495046819810505}
   m_Layer: 0
   m_Name: Tractor2
   m_TagString: Untagged
@@ -77,3 +81,55 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &2661455849781155316
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015673253469035363}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.22673793, y: 0.055032015, z: 0.052207757}
+  m_Center: {x: -0.06728556, y: 0.07077348, z: -0.057934284}
+--- !u!65 &7739435203050257627
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015673253469035363}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.032377172, y: 0.04495425, z: 0.029483413}
+  m_Center: {x: -0.16988541, y: 0.022477126, z: -0.059573174}
+--- !u!65 &7435424563594532892
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015673253469035363}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08330631, y: 0.09828946, z: 0.038425922}
+  m_Center: {x: 0.0004401207, y: 0.04914473, z: -0.11001172}
+--- !u!65 &2418495046819810505
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015673253469035363}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08674448, y: 0.09828946, z: 0.034259416}
+  m_Center: {x: 0.0027111887, y: 0.04914473, z: -0.0101125715}
