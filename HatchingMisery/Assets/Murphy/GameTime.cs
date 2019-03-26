@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;   // This is for the events
 
 public class GameTime : MonoBehaviour
 {
@@ -11,8 +12,15 @@ public class GameTime : MonoBehaviour
     public GameObject UniqueChick;// for later
     public List<GameObject> Chicks;
 
+    // V's code
+    public float AfternoonTime;
+    public float EveningTime;
+    public event Action<string> SunChange;
+
+    private string TimeOfDay;
+    // End V's code
+
     // Start is called before the first frame update
-    
     void Start()
     {
         /*
@@ -26,15 +34,15 @@ public class GameTime : MonoBehaviour
            Destroy(temp);
        }
         */
-        PlayerPrefs.SetInt("currentfeed",0);
+        PlayerPrefs.SetInt("currentfeed", 0);
     }
 
     public static void checklevel()
     {
         if (SceneManager.GetActiveScene().name == "Level 2")
         {
-            PlayerPrefs.SetInt("feedtotal",0);
-            PlayerPrefs.SetInt("chicksleft",10);
+            PlayerPrefs.SetInt("feedtotal", 0);
+            PlayerPrefs.SetInt("chicksleft", 10);
         }
     }
 
@@ -43,9 +51,23 @@ public class GameTime : MonoBehaviour
     {
         gametime = gametime + Time.deltaTime * 1;
 
-        if( gametime > 60)
+        if (gametime > 60)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
+
+        // V's code
+        if ((int)gametime == AfternoonTime)
+        {
+            TimeOfDay = "Afternoon";
+            SunChange(TimeOfDay);
+        }
+
+        if ((int)gametime == EveningTime)
+        {
+            TimeOfDay = "Evening";
+            SunChange(TimeOfDay);
+        }
+        // End V's code
     }
 }
