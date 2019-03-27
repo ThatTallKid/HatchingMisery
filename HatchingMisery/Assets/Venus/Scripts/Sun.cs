@@ -6,27 +6,36 @@ using JetBrains.Annotations;
 
 public class Sun : MonoBehaviour
 {
-    /*public float MorningAngle;
+    #region RotationAngles
+    public float MorningAngle;
     public float AfternoonAngle;
-    public float EveningAngle;*/
+    public float EveningAngle;
+    #endregion
 
+    #region SunColours
     public Color MorningColor;
     public Color AfternoonColor;
     public Color EveningColor;
+    #endregion
+
+    private Vector3 SunsetPos;
 
     // Start is called before the first frame update
     void Start()
     {
-        //GetComponent<Transform>().transform.rotation = Quaternion.Euler(MorningAngle, 0, 0);
+        GetComponent<Transform>().transform.rotation = Quaternion.Euler(MorningAngle, 0, 0);
         GetComponent<Light>().color = MorningColor;
 
         FindObjectOfType<GameTime>().SunChange += SunRotate;
+        SunsetPos = new Vector3(1, 0, 0);
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        //GetComponent<Transform>().transform.rotation.
+        //transform.rotation = Quaternion.AngleAxis(30, Vector3.up);
+        //transform.Rotate
     }
 
     public void SunRotate(string DayTime)
