@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Text;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -21,18 +22,12 @@ public class HawkMovementV2 : MonoBehaviour
         get => currentstate;
         set
         {
-            if (currentstate != value && value != states.Swooping)
+            if (currentstate != value)
             {
                 if (value != states.Swooping)
                 {
                     // reset swooping value
                     swoopvalue = 0;
-                    // no need to draw object
-                    gameObject.GetComponent<Renderer>().enabled = false;
-                }
-                else
-                {
-                    gameObject.GetComponent<Renderer>().enabled = true;
                 }
             }
             currentstate = value;
@@ -40,7 +35,9 @@ public class HawkMovementV2 : MonoBehaviour
     }
 
     public Projector shadow;
+    public Renderer show;
 
+    // start off screen a distance, above the camera height
     public float startswoopheight;
 
     public Vector3 target;
@@ -65,6 +62,8 @@ public class HawkMovementV2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // no need to draw object
+        show.enabled = (Currentstate==states.Swooping);
         if (currentstate == states.Elsewhere)
         {
             searchtimer += Time.deltaTime;
@@ -89,7 +88,7 @@ public class HawkMovementV2 : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(target + (5 * Vector3.up), Vector3.down, out hit))
             {
-                if (hit.collider.tag == "Shelter")
+                if (hit.collider.bounds.max.y>target.y+0.5f)
                 {
                     Currentstate = states.Elsewhere;
                 }
@@ -100,6 +99,7 @@ public class HawkMovementV2 : MonoBehaviour
                 }
             }
         }
+        // set state to warning then swap to swooping and reverse along the path
         // don't do this all the time, have it cut off when the material color is within a limit of the target
         if (currentstate == states.Warning)
         {
@@ -123,6 +123,7 @@ public class HawkMovementV2 : MonoBehaviour
             float dist = startdist/ Vector2.Distance(new Vector2(startswooppoint.x, startswooppoint.z),new Vector2(endswooppoint.x, endswooppoint.z));
             dist *= timevalue;
             
+            // setup waypoints to have the Hawk smoothly follow
             Vector3 templerpstart = Vector3.Lerp(Vector3.Lerp(startswooppoint,new Vector3(startswooppoint.x,target.y,startswooppoint.z),swoopvalue/dist),
                 Vector3.Lerp(new Vector3(startswooppoint.x,target.y,startswooppoint.z),target,swoopvalue/dist),
                 swoopvalue/dist);
@@ -150,11 +151,6 @@ public class HawkMovementV2 : MonoBehaviour
             }
 
             transform.LookAt(gameObject.transform.position+gradient);
-            //float horizondist = Vector2.Distance(new Vector2(templerpstart.x, templerpstart.z),new Vector2(templerpend.x, templerpend.z));
-            //transform.rotation = Quaternion.Euler();
-            //transform.forward = Vector3.Normalize(new Vector3(endswooppoint.x-startswooppoint.x,horizondist/(templerpend.y-templerpstart.y),endswooppoint.z-startswooppoint.z));
-            //gameObject.GetComponent<Rigidbody>().MoveRotation(Quaternion.LookRotation(gameObject.GetComponent<Rigidbody>().velocity));
-            //shadow.material.color = new Color(shadow.material.color.r,shadow.material.color.g,shadow.material.color.b,Mathf.Lerp(shadow.material.color.a,0,0.1f));
         }
     }
 
@@ -163,10 +159,6 @@ public class HawkMovementV2 : MonoBehaviour
         RaycastHit hit;
         // get layer mask working correctly, use for hidden collisions of objects player can go under
         Physics.Raycast(target+new Vector3(0,0,0), direction, out hit,10000,1);
-        //if (!forward.collider)
-        //{
-        //}
-        //Vector3[] temp = { forward.point,backward.point}; //forward.collider.bounds.max,backward.point,backward.collider.bounds.max
         
         return hit;
     }
@@ -183,14 +175,14 @@ public class HawkMovementV2 : MonoBehaviour
         
         for (float i = 0; i < 180; i++)
         {
-            // need to change units to radians as to not overshoot
-            Vector3 direction = new Vector3(Mathf.Sin(i),0,Mathf.Cos(i));
+            float rad = Mathf.Deg2Rad * i;
+            Vector3 direction = new Vector3(Mathf.Sin(rad),0,Mathf.Cos(rad));
             RaycastHit forward = checktarget(target,direction);
             RaycastHit backward = checktarget(target,-direction);
             if (Vector3.Distance(forward.point, backward.point) > largestdist)
             {
                 largestdist = Vector3.Distance(forward.point, backward.point);
-                largestdir = new Vector3(Mathf.Sin(i),0,Mathf.Cos(i));
+                largestdir = new Vector3(Mathf.Sin(rad),0,Mathf.Cos(rad));
                 tempforward = forward;
                 tempbackward = backward;
             }
@@ -220,9 +212,6 @@ public class HawkMovementV2 : MonoBehaviour
             }
         }
         // have a max/min angle to cast from the end points onto the path
-        // setup waypoints to have the Hawk smoothly follow
-        // set state to warning then swap to swooping and reverse along the path
-        // start off screen a distance, above the camera height
         // when swooping, have a trigger around the hawk that picks up chicks/kills them, perhaps wait until off screen
         return largestdist;
     }
@@ -233,7 +222,10 @@ public class HawkMovementV2 : MonoBehaviour
         {
             other.gameObject.GetComponent<BabyChickV2>().enabled = false;
             other.gameObject.GetComponent<NavMeshAgent>().enabled = false;
-            other.transform.SetParent(transform);
+            //other.transform.SetParent(transform);
+            chicks.Chicks.Remove(other.gameObject);
+            PlayerPrefs.SetInt("chicksleft", PlayerPrefs.GetInt("chicksleft")-1);
+            Destroy(other.gameObject);
         }
     }
 }
