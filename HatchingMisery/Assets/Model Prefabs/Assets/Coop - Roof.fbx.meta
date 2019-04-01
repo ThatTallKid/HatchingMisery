@@ -1,14 +1,14 @@
 fileFormatVersion: 2
-guid: f411a2439b01ba74193008ed0d62afa5
+guid: 401d5a948102af943ba1b5b6fb0c7da5
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: aiWireframe1
+    2100000: Chicken_coop_roof
     2300000: //RootNode
     3300000: //RootNode
-    4300000: pCube41
+    4300000: polySurface10
   externalObjects: {}
   materials:
     importMaterials: 1
