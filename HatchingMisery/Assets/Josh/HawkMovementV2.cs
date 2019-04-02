@@ -60,7 +60,7 @@ public class HawkMovementV2 : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         // no need to draw object
         show.enabled = (Currentstate==states.Swooping);
@@ -97,7 +97,8 @@ public class HawkMovementV2 : MonoBehaviour
                 else
                 {
                     // choose the start and end points and report
-                    Debug.Log(choosedir(target));
+                    float temp = choosedir(target);
+                    Debug.Log(temp);
                     currentstate = states.Warning;
                 }
             }
@@ -106,7 +107,7 @@ public class HawkMovementV2 : MonoBehaviour
         // don't do this all the time, have it cut off when the material color is within a limit of the target
         if (currentstate == states.Warning)
         {
-            swoopvalue += Time.deltaTime; 
+            swoopvalue += Time.fixedDeltaTime; 
             //todo when we have the projector material installed re-enable the projector
             //shadow.farClipPlane = Mathf.Lerp(startswoopheight, startswoopheight + 4,Mathf.InverseLerp(0,Vector3.Distance(startswooppoint,endswooppoint),Vector3.Distance(transform.position,startswooppoint)));
             //shadow.material.color = new Color(shadow.material.color.r,shadow.material.color.g,shadow.material.color.b,Mathf.Lerp(0,1,Mathf.InverseLerp(0,Vector3.Distance(startswooppoint,endswooppoint),Vector3.Distance(transform.position,startswooppoint))));
@@ -120,7 +121,7 @@ public class HawkMovementV2 : MonoBehaviour
         }
         else if(currentstate == states.Swooping)
         {
-            swoopvalue += Time.deltaTime;
+            swoopvalue += Time.fixedDeltaTime;
             Vector3 gradient = Vector3.zero;
             float startdist = Vector2.Distance(new Vector2(startswooppoint.x, startswooppoint.z),
                 new Vector2(target.x, target.z));
