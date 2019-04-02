@@ -31,10 +31,10 @@ public class HenCallSystem : MonoBehaviour
 
     void StopFollow()
     {
-        // Foreach chick, change their state to 'wandering' (temporary)
+        // Foreach chick, change their state to 'stopping'
         foreach (BabyChickV2 chick in chicks)
         {
-            chick.CurrentState = BabyChickV2.ChickState.Wandering;
+            chick.CurrentState = BabyChickV2.ChickState.Stopping;
         }
     }
 }

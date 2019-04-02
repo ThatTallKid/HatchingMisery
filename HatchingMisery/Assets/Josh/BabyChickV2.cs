@@ -33,12 +33,14 @@ public class BabyChickV2 : MonoBehaviour
     {
         Wandering,
         Feeding,
-        Following
+        Following,
+        Stopping
     }
     public ChickState CurrentState;    // Change back to private after
     private GameObject MotherHen;
     private NavMeshAgent Nav;
     private GameObject CurrentFood;
+    private Rigidbody chickRB;
     
     // Start is called before the first frame update
     void Start()
@@ -47,9 +49,9 @@ public class BabyChickV2 : MonoBehaviour
         CurrentState = ChickState.Following;
         MotherHen = FindObjectOfType<Chicken>().gameObject;
         Nav.speed = FollowSpeed;
+        chickRB = GetComponent<Rigidbody>();
         //PlayerPrefs.SetInt("feedtotal", FeedTotal);
         //PlayerPrefs.SetInt("chicksleft", PlayerPrefs.GetInt("chicksleft")+1);
-
     }
 
     // Update is called once per frame
@@ -93,6 +95,11 @@ public class BabyChickV2 : MonoBehaviour
                     wandertime = 0;
                 }
                 //transform.Translate(new Vector3(Random.Range(-2, 2), 0, Random.Range(-2, 2)) * FollowSpeed * Time.deltaTime);
+                break;
+            case ChickState.Stopping:
+            {
+                chickRB.constraints = RigidbodyConstraints.FreezeAll;
+            }
                 break;
         }
         Nav.speed = FollowSpeed;
