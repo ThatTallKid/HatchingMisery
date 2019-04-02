@@ -4,28 +4,28 @@ using UnityEngine;
 
 public class MudScript : MonoBehaviour
 {
-    public float slowspeed = 0.5f;
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Chick"))
         {
-            other.GetComponent<BabyChickV2>().FollowSpeed *= slowspeed;
+            other.GetComponent<BabyChickV2>().Inmud++;
         }
-        if(other.gameObject.layer.Equals(8))
+        if(other.gameObject.name =="Hen")
         {
-            other.GetComponent<HenMovement>().Nav.speed *= slowspeed;
+            Debug.Log("test2");
+            other.GetComponent<HenMovement>().Inmud++;
         }
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Chick"))
         {
-            other.GetComponent<BabyChickV2>().FollowSpeed /= slowspeed;
+            other.GetComponent<BabyChickV2>().Inmud--;
         }
-        if(other.gameObject.layer.Equals(8))
+        if(other.gameObject.name =="Hen")
         {
-            other.GetComponent<HenMovement>().Nav.speed /= slowspeed;
+            Debug.Log("test");
+            other.GetComponent<HenMovement>().Inmud--;
         }
     }
 }

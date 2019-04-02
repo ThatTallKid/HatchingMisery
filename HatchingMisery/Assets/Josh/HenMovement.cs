@@ -8,6 +8,37 @@ public class HenMovement : MonoBehaviour
     public Rigidbody body;
     public int chickamount;
     public GameObject ChickPrefab;
+    public Animator anims;
+    public float slowspeed = 0.5f;
+    public int inmud = 0;
+
+    int runHash = Animator.StringToHash("IsRunning");
+    int mudHash = Animator.StringToHash("InMud");
+    public int Inmud
+    {
+        get => inmud;
+        set
+        {
+            
+            if (inmud != 0)
+            {
+                if (value == 0)
+                {
+                    Nav.speed /= slowspeed;
+                    anims.SetBool(mudHash,false);
+                }
+            }
+            else
+            {
+                if (value != 0)
+                {
+                    Nav.speed *= slowspeed;
+                    anims.SetBool(mudHash,true);
+                }
+            }
+            inmud = value;
+        }
+    }
 
     public NavMeshAgent Nav;
     // Start is called before the first frame update
@@ -42,7 +73,10 @@ public class HenMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        anims.SetBool(runHash,(Nav.velocity.magnitude > 0.1f));
+        //anims.speed = Nav.velocity.magnitude;
         Nav.isStopped = false;
+        
         
         Nav.destination = transform.position + new Vector3(Input.GetAxis("Vertical"),0,-Input.GetAxis("Horizontal")).normalized;
         // move in direction indicated by controller regardless of what the controller is

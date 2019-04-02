@@ -8,8 +8,26 @@ public class BabyChickV2 : MonoBehaviour
 {
     public float FollowSpeed;
     public float FollowDistance;
+    public float slowspeed = 0.5f;
     public float wandertime;
     private bool startedfollowing = false;
+    private int inmud = 0;
+    public int Inmud
+    {
+        get => inmud;
+        set
+        {
+            if (inmud != 0)
+            {
+                if(value == 0)FollowSpeed /= slowspeed;
+            }
+            else
+            {
+                if(value != 0)FollowSpeed *= slowspeed;
+            }
+            inmud = value;
+        }
+    }
 
     public enum ChickState
     {

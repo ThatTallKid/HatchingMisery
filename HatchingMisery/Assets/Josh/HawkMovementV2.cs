@@ -64,6 +64,7 @@ public class HawkMovementV2 : MonoBehaviour
     {
         // no need to draw object
         show.enabled = (Currentstate==states.Swooping);
+        shadow.enabled = (Currentstate == states.Warning);
         if (currentstate == states.Elsewhere)
         {
             searchtimer += Time.deltaTime;
@@ -107,7 +108,8 @@ public class HawkMovementV2 : MonoBehaviour
         {
             swoopvalue += Time.deltaTime; 
             //todo when we have the projector material installed re-enable the projector
-            //shadow.material.color = new Color(shadow.material.color.r,shadow.material.color.g,shadow.material.color.b,Mathf.Lerp(0,1,Vector3.Distance(transform.position,startswooppoint)));
+            //shadow.farClipPlane = Mathf.Lerp(startswoopheight, startswoopheight + 4,Mathf.InverseLerp(0,Vector3.Distance(startswooppoint,endswooppoint),Vector3.Distance(transform.position,startswooppoint)));
+            //shadow.material.color = new Color(shadow.material.color.r,shadow.material.color.g,shadow.material.color.b,Mathf.Lerp(0,1,Mathf.InverseLerp(0,Vector3.Distance(startswooppoint,endswooppoint),Vector3.Distance(transform.position,startswooppoint))));
             gameObject.transform.position = Vector3.Lerp(endswooppoint, startswooppoint,swoopvalue/warningtime);
             gameObject.transform.rotation = Quaternion.LookRotation((startswooppoint-endswooppoint).normalized,Vector3.up);
             if (swoopvalue >= warningtime)

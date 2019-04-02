@@ -113,15 +113,10 @@ MonoBehaviour:
   shadow: {fileID: 7119198098537205610}
   show: {fileID: 7119198098483875733}
   startswoopheight: 30
-  target: {x: -16.52, y: 1.5, z: 30.65}
-  minimundist: 5
-  maxdist: 20
-  minheight: 0.5
-  swoopvalue: 0
-  startswooppoint: {x: 0, y: 0, z: 0}
-  endswooppoint: {x: 0, y: 0, z: 0}
-  chicks: {fileID: 0}
-  searchtimer: 0
+  idletime: 7
+  warningtime: 7
+  totalswooptime: 5
+  maxchicksperswoop: 2
 --- !u!65 &6755478656800583185
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -133,7 +128,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 1, z: 3}
+  m_Size: {x: 3, y: 1, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7119198098537205608
 GameObject:
@@ -176,11 +171,11 @@ Projector:
   m_Enabled: 0
   serializedVersion: 2
   m_NearClipPlane: 0.1
-  m_FarClipPlane: 100
-  m_FieldOfView: 60
-  m_AspectRatio: 1
+  m_FarClipPlane: 55.75
+  m_FieldOfView: 49.5
+  m_AspectRatio: 2.5
   m_Orthographic: 1
-  m_OrthographicSize: 10
+  m_OrthographicSize: 1.3
   m_Material: {fileID: 2100000, guid: 3c5955406a2c3a74893ff0616da6cee9, type: 2}
   m_IgnoreLayers:
     serializedVersion: 2
