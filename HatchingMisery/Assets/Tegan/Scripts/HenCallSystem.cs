@@ -1,48 +1,41 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using System;
+using System.Diagnostics;
+using UnityEngine;
 using UnityEngine.UI;
 using Debug = UnityEngine.Debug;
 
-    
 
 public class HenCallSystem : MonoBehaviour
 {
     public Button follow;
     public Button stopFollow;
 
-    public BabyChickV2[] chicks;
-  
+    public BabyChickV2.ChickState currentState;
+
+    // Start is called before the first frame update
     void Start()
     {
-        //When the follow button is clicked, listen to the Follow function
         follow.onClick.AddListener(Follow);
-        //When the stopFollow button is clicked, listen to the StopFollow function
         stopFollow.onClick.AddListener(StopFollow);
-        
-        //Initializing the chicks array
-        chicks = FindObjectsOfType<BabyChickV2>();
-     
-        //Log a message if no chicks were found
-        if (chicks.Equals(0))
-        {
-            Debug.Log("No chicks were found");
-        }            
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+       
     }
 
     void Follow()
     {
-        //Foreach chick, change their state to following
-        foreach (BabyChickV2 chick in chicks)
-        {
-            chick.currentState = BabyChickV2.ChickState.Following;
-        }
+        currentState = BabyChickV2.ChickState.Following;
+        Debug.Log("Chicks are following");
     }
-   
+
     void StopFollow()
     {
-        //Foreach chick, change their state to wandering
-        foreach (BabyChickV2 chick in chicks)
-        {
-            chick.currentState = BabyChickV2.ChickState.Wandering;
-        }
+        currentState = BabyChickV2.ChickState.Wandering;
+        Debug.Log("Chicks have stopped following");
     }
 }

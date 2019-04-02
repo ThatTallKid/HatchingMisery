@@ -761,7 +761,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   follow: {fileID: 470277592}
   stopFollow: {fileID: 638867860}
-  chicks: []
+  currentState: 0
 --- !u!1 &1336650181
 GameObject:
   m_ObjectHideFlags: 0

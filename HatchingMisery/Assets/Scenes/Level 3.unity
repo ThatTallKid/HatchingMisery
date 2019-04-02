@@ -100,7 +100,7 @@ NavMeshSettings:
     agentRadius: 0.25
     agentHeight: 2
     agentSlope: 45
-    agentClimb: 0.4
+    agentClimb: 0.75
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
@@ -123,16 +123,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (26)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -219,16 +209,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -313,16 +293,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (15)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -569,16 +539,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (87)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -759,16 +719,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (42)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -939,16 +889,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1033,16 +973,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (84)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -1259,16 +1189,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (28)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1353,16 +1273,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (27)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -1579,16 +1489,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (66)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1673,16 +1573,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (76)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -2004,16 +1894,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (77)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2098,16 +1978,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (100)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -2274,6 +2144,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 8507319949241687082, guid: 52bf2f5d5b6f3bf43ad0cf182ac079e7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507319949241687082, guid: 52bf2f5d5b6f3bf43ad0cf182ac079e7,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52bf2f5d5b6f3bf43ad0cf182ac079e7, type: 3}
 --- !u!4 &311592859 stripped
@@ -2379,16 +2259,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (81)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2473,16 +2343,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (80)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -2569,16 +2429,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (93)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2663,16 +2513,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (70)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -2834,16 +2674,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (21)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2929,16 +2759,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (89)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3023,16 +2843,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -3203,16 +3013,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (58)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -3389,16 +3189,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (91)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3483,16 +3273,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (50)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -3884,16 +3664,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (36)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4144,16 +3914,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (82)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4238,16 +3998,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (65)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -4334,16 +4084,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (54)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4429,16 +4169,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (35)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4523,16 +4253,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (12)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -4854,16 +4574,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (43)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4948,16 +4658,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (44)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -5119,16 +4819,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (63)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5213,16 +4903,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (99)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -5309,16 +4989,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (72)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5403,16 +5073,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (96)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -5499,16 +5159,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (78)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5594,16 +5244,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (45)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5688,16 +5328,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (101)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -5869,16 +5499,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (31)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5963,16 +5583,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (17)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -6107,16 +5717,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (39)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -6333,16 +5933,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (57)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6513,16 +6103,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (59)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6607,16 +6187,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (23)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -7342,16 +6912,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (53)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7437,16 +6997,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (6)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7531,16 +7081,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -7842,16 +7382,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (97)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7937,16 +7467,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (61)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8031,16 +7551,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (20)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -8342,16 +7852,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (22)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8527,16 +8027,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (56)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8711,16 +8201,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (49)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -9147,16 +8627,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (73)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9241,16 +8711,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (94)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -9517,16 +8977,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (75)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9702,16 +9152,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (34)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9796,16 +9236,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (69)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -9892,16 +9322,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (102)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9987,16 +9407,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (37)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10081,16 +9491,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (95)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -10249,16 +9649,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (74)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -10420,16 +9810,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (88)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10514,16 +9894,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (60)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -10824,16 +10194,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (47)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -11144,16 +10504,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (98)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -11508,16 +10858,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11602,16 +10942,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (32)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -11772,16 +11102,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (30)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -11950,16 +11270,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (18)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12044,16 +11354,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (33)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -12140,16 +11440,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (14)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12234,16 +11524,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -12553,16 +11833,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (51)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12860,16 +12130,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (55)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12954,16 +12214,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (41)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -13135,16 +12385,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (19)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13229,16 +12469,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (62)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -13455,16 +12685,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (83)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13680,16 +12900,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (64)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13850,16 +13060,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14019,16 +13219,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (67)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -14200,16 +13390,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (79)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14294,16 +13474,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (90)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -14465,16 +13635,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (86)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14559,16 +13719,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (85)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -14655,16 +13805,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (38)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14749,16 +13889,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (52)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -14920,16 +14050,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (8)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15014,16 +14134,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (92)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -15110,16 +14220,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (10)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15205,16 +14305,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (16)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15299,16 +14389,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (29)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -15540,6 +14620,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7624258815389376898, guid: e1ee86e4f7fe3b244b8a8b2fb1c400b6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1ee86e4f7fe3b244b8a8b2fb1c400b6, type: 3}
 --- !u!4 &1752299257 stripped
@@ -15559,16 +14644,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (71)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -15825,16 +14900,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (25)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16080,16 +15145,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (40)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16174,16 +15229,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (46)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -16604,16 +15649,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (9)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16698,16 +15733,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (48)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -16863,16 +15888,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (68)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16957,16 +15972,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (13)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
@@ -17333,16 +16338,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence4 (24)
       objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17517,16 +16512,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence4 (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088750955226654055, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577777312517232199, guid: 7d2cbd8d3e18c4c4c818d95c5e0fdc91,
         type: 3}
