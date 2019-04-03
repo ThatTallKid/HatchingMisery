@@ -40,8 +40,7 @@ public class BabyChickV2 : MonoBehaviour
     private GameObject MotherHen;
     private NavMeshAgent Nav;
     private GameObject CurrentFood;
-    private Rigidbody chickRB;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,7 +48,6 @@ public class BabyChickV2 : MonoBehaviour
         CurrentState = ChickState.Following;
         MotherHen = FindObjectOfType<Chicken>().gameObject;
         Nav.speed = FollowSpeed;
-        chickRB = GetComponent<Rigidbody>();
         //PlayerPrefs.SetInt("feedtotal", FeedTotal);
         //PlayerPrefs.SetInt("chicksleft", PlayerPrefs.GetInt("chicksleft")+1);
     }
@@ -98,7 +96,7 @@ public class BabyChickV2 : MonoBehaviour
                 break;
             case ChickState.Stopping:
             {
-                chickRB.constraints = RigidbodyConstraints.FreezeAll;
+                Nav.destination = transform.position;
             }
                 break;
         }
