@@ -124,6 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 179d7e4bbac0dd142bbe8380ccd31f8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hawkRigidBody: {fileID: 0}
 --- !u!114 &6867398473517931322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,6 +137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b32d0a977bf941e4c98113b5d1962b61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hawkRigidBody: {fileID: 0}
   swoopState: {fileID: 0}
   patrolState: {fileID: 0}
   currentState: {fileID: 0}
@@ -151,6 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ef18de093f2ac340b95d891b68ca04c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hawkRigidBody: {fileID: 0}
   speed: 0
   turnSpeed: 0
   hoverForce: 65

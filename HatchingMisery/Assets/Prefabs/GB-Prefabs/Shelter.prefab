@@ -470,7 +470,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2124708598696182083}
   - component: {fileID: 3538265295975353591}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hawkfree Zone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
