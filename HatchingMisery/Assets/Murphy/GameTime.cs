@@ -7,6 +7,7 @@ using System;   // This is for the events
 
 public class GameTime : MonoBehaviour
 {
+    public bool tutorial = false;
     public int ChicksLeft;
     public float gametime;
     public GameObject UniqueChick;// for later
@@ -49,25 +50,31 @@ public class GameTime : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gametime = gametime + Time.deltaTime * 1;
-
-        if (gametime > 60)
+        // todo step by step logic will be needed in the tutorial to teach each part of the game in turn
+        if (!tutorial)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
 
-        // V's code
-        if ((int)gametime == AfternoonTime)
-        {
-            TimeOfDay = "Afternoon";
-            SunChange(TimeOfDay);
-        }
+            gametime = gametime + Time.deltaTime * 1;
 
-        if ((int)gametime == EveningTime)
-        {
-            TimeOfDay = "Evening";
-            SunChange(TimeOfDay);
+            if (gametime > 60)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
+
+            // V's code
+            if ((int) gametime == AfternoonTime)
+            {
+                TimeOfDay = "Afternoon";
+                SunChange(TimeOfDay);
+            }
+
+            if ((int) gametime == EveningTime)
+            {
+                TimeOfDay = "Evening";
+                SunChange(TimeOfDay);
+            }
+
+            // End V's code
         }
-        // End V's code
     }
 }
