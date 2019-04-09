@@ -28,6 +28,7 @@ public class HawkMovementV2 : MonoBehaviour
                 {
                     // reset swooping value
                     swoopvalue = 0;
+                    anims.SetBool("Grab",false);
                 }
             }
             currentstate = value;
@@ -36,6 +37,7 @@ public class HawkMovementV2 : MonoBehaviour
 
     public Projector shadow;
     public Renderer show;
+    public Animator anims;
 
     // start off screen a distance, above the camera height
     public float startswoopheight;
@@ -57,6 +59,8 @@ public class HawkMovementV2 : MonoBehaviour
     void Awake()
     {
         chicks = GameObject.FindObjectOfType<GameTime>();
+        anims.SetBool("GLIDING", true);
+        anims.SetBool("Grab", false);
     }
 
     // Update is called once per frame
@@ -90,7 +94,7 @@ public class HawkMovementV2 : MonoBehaviour
             //todo uses height of collider to tell if it is shelter, change to tag later
             if (Physics.Raycast(target + (5 * Vector3.up), Vector3.down, out hit))
             {
-                if (hit.collider.bounds.max.y>target.y+0.5f)
+                if (hit.collider.gameObject.layer == LayerMask.NameToLayer("HawkCol"))
                 {
                     Currentstate = states.Elsewhere;
                 }
@@ -99,6 +103,7 @@ public class HawkMovementV2 : MonoBehaviour
                     // choose the start and end points and report
                     float temp = choosedir(target);
                     Debug.Log(temp);
+                    target.y = 1;
                     currentstate = states.Warning;
                 }
             }
@@ -159,7 +164,9 @@ public class HawkMovementV2 : MonoBehaviour
     {
         RaycastHit hit;
         // get layer mask working correctly, use for hidden collisions of objects player can go under
-        Physics.Raycast(target+new Vector3(0,0,0), direction, out hit,10000,1);
+        string[] tempnames = {"Default", "HawkCol"};
+        LayerMask temp = LayerMask.GetMask(tempnames);
+        Physics.Raycast(target+new Vector3(0,0,0), direction, out hit,10000,temp);
         
         return hit;
     }
@@ -221,6 +228,10 @@ public class HawkMovementV2 : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Chick"))
         {
+            if (heldchicks == 0)
+            {
+                anims.SetBool("Grab",true);
+            }
             if (heldchicks < maxchicksperswoop)
             {
                 other.gameObject.GetComponent<BabyChickV2>().enabled = false;
