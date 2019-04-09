@@ -4,20 +4,25 @@ using UnityEngine.UI;
 
 public class HenCallSystem : MonoBehaviour
 {
-    public Button follow;
-    public Button stopFollow;
-
     private BabyChickV2[] chicks;
 
     void Start()
     {
-        // When the follow button is clicked, listen to the Follow function
-        follow.onClick.AddListener(Follow);
-        // When the stopFollow button is clicked, listen to the StopFollow function
-        stopFollow.onClick.AddListener(StopFollow);
-        
         // Initializing the chicks array
         chicks = FindObjectsOfType<BabyChickV2>();
+    }
+
+    private void Update()
+    {
+        if (HenCallSystemControls.AButton())
+        {
+            Follow();
+        }
+
+        if (HenCallSystemControls.BButton())
+        {
+            StopFollow();
+        }
     }
 
     void Follow()
