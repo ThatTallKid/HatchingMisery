@@ -9,7 +9,10 @@ public class BabyChickV2 : MonoBehaviour
     public float FollowSpeed;
     public float FollowDistance;
     public float slowspeed = 0.5f;
-    public float wandertime;
+    private float wandertime = 0;
+    private float currentrand = 0;
+    public float boredtime = 4;
+    public float boredrange = 4;
     private bool startedfollowing = false;
     private int inmud = 0;
     public int Inmud
@@ -36,7 +39,24 @@ public class BabyChickV2 : MonoBehaviour
         Following,
         Stopping
     }
-    public ChickState CurrentState;    // Change back to private after
+
+    private ChickState currentState = ChickState.Following;
+
+    public ChickState CurrentState
+    {
+        get { return currentState; }
+        set
+        {
+            currentrand = Random.Range(0, boredrange);
+            wandertime = 0;
+            if (value != currentState)
+            {
+            }
+            currentState = value;
+        }
+    }
+// Change back to private after
+
     private GameObject MotherHen;
     private NavMeshAgent Nav;
     private GameObject CurrentFood;
@@ -53,7 +73,7 @@ public class BabyChickV2 : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Nav.isStopped = false;
         switch (CurrentState)
@@ -64,6 +84,16 @@ public class BabyChickV2 : MonoBehaviour
                 {
                     Nav.stoppingDistance = FollowDistance;
                     startedfollowing = true;
+                }
+                
+                if (wandertime < boredtime + currentrand)
+                {
+                    wandertime += Time.deltaTime;
+                }
+                else
+                {
+                    Nav.destination = transform.position + (new Vector3(Random.Range(-1f,1f),0,Random.Range(-1f,1f)).normalized * Random.Range(0f,2f));
+                    CurrentState = ChickState.Wandering;
                 }
                 //Vector3 ToChicken = MotherHen.transform.position - transform.position;
                 //transform.Translate(ToChicken * FollowSpeed * Time.deltaTime);
@@ -77,7 +107,8 @@ public class BabyChickV2 : MonoBehaviour
 
                 if (!CurrentFood)
                 {
-                    CurrentState = ChickState.Following;
+                    Nav.destination = transform.position + (new Vector3(Random.Range(-1f,1f),0,Random.Range(-1f,1f)).normalized * Random.Range(0f,2f));
+                    CurrentState = ChickState.Wandering;
                 }
                 break;
             case ChickState.Wandering:
@@ -86,8 +117,11 @@ public class BabyChickV2 : MonoBehaviour
                     startedfollowing = false;
                     Nav.stoppingDistance = 0.1f;
                 }
-                wandertime += Time.deltaTime;
-                if (wandertime > 6)
+                if (wandertime < boredtime)
+                {
+                    wandertime += Time.deltaTime;
+                }
+                else
                 {
                     Nav.destination = transform.position + (new Vector3(Random.Range(-1f,1f),0,Random.Range(-1f,1f)).normalized * Random.Range(0f,2f));
                     wandertime = 0;
@@ -97,6 +131,16 @@ public class BabyChickV2 : MonoBehaviour
             case ChickState.Stopping:
             {
                 Nav.destination = transform.position;
+                
+                if (wandertime < boredtime + currentrand)
+                {
+                    wandertime += Time.deltaTime;
+                }
+                else
+                {
+                    Nav.destination = transform.position + (new Vector3(Random.Range(-1f,1f),0,Random.Range(-1f,1f)).normalized * Random.Range(0f,2f));
+                    CurrentState = ChickState.Wandering;
+                }
             }
                 break;
         }

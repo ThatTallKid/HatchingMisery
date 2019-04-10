@@ -136,8 +136,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FollowSpeed: 4
   FollowDistance: 1.5
-  wandertime: 0
-  CurrentState: 2
+  slowspeed: 0.5
+  boredtime: 4
+  boredrange: 4
 --- !u!54 &8680801823276874938
 Rigidbody:
   m_ObjectHideFlags: 0

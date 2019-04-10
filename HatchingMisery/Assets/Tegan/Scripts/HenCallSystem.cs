@@ -1,25 +1,27 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
 
 
 public class HenCallSystem : MonoBehaviour
 {
-    private BabyChickV2[] chicks;
+    private GameTime chicks;
 
     void Start()
     {
         // Initializing the chicks array
-        chicks = FindObjectsOfType<BabyChickV2>();
+        
+        chicks = GameObject.FindObjectOfType<GameTime>();
     }
 
     private void Update()
     {
-        if (HenCallSystemControls.AButton())
+        if (Input.GetAxis("A_Button") >0)
         {
             Follow();
         }
 
-        if (HenCallSystemControls.BButton())
+        if (Input.GetAxis("B_Button")>0)
         {
             StopFollow();
         }
@@ -28,18 +30,26 @@ public class HenCallSystem : MonoBehaviour
     void Follow()
     {
         // Foreach chick, change their state to 'following'
-        foreach (BabyChickV2 chick in chicks)
+        foreach (GameObject chick in chicks.Chicks)
         {
-            chick.CurrentState = BabyChickV2.ChickState.Following;
+            BabyChickV2 temp = chick.GetComponent<BabyChickV2>();
+            if (temp.CurrentState != BabyChickV2.ChickState.Feeding)
+            {
+                chick.GetComponent<BabyChickV2>().CurrentState = BabyChickV2.ChickState.Following;
+            }
         }
     }
 
     void StopFollow()
     {
         // Foreach chick, change their state to 'stopping'
-        foreach (BabyChickV2 chick in chicks)
+        foreach (GameObject chick in chicks.Chicks)
         {
-            chick.CurrentState = BabyChickV2.ChickState.Stopping;
+            BabyChickV2 temp = chick.GetComponent<BabyChickV2>();
+            if (temp.CurrentState != BabyChickV2.ChickState.Feeding&&temp.CurrentState == BabyChickV2.ChickState.Following)
+            {
+                chick.GetComponent<BabyChickV2>().CurrentState = BabyChickV2.ChickState.Stopping;
+            }
         }
     }
 }
