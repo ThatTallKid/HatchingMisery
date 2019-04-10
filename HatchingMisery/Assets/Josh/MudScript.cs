@@ -10,7 +10,7 @@ public class MudScript : MonoBehaviour
         {
             other.GetComponent<BabyChickV2>().Inmud++;
         }
-        if(other.gameObject.name =="Hen")
+        if(other.gameObject.layer ==LayerMask.NameToLayer("HenCol"))
         {
             Debug.Log("test2");
             other.GetComponent<HenMovement>().Inmud++;
@@ -22,7 +22,7 @@ public class MudScript : MonoBehaviour
         {
             other.GetComponent<BabyChickV2>().Inmud--;
         }
-        if(other.gameObject.name =="Hen")
+        if(other.gameObject.layer ==LayerMask.NameToLayer("HenCol"))
         {
             Debug.Log("test");
             other.GetComponent<HenMovement>().Inmud--;
