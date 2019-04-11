@@ -7,6 +7,7 @@ public class CameraMotion : MonoBehaviour
     public GameObject target;
     public Vector3 offset;
     public Vector3 Angle;
+    private RaycastHit[] hit;
 
     private void Awake()
     {
@@ -16,6 +17,19 @@ public class CameraMotion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        hit = Physics.RaycastAll(transform.position, (target.transform.position - transform.position).normalized,
+            Vector3.Distance(target.transform.position, transform.position), 1);
+        for (int i = 0; i < hit.Length; i++)
+        {
+            ScreenFade temp = hit[i].collider.gameObject.GetComponent<ScreenFade>();
+            if (temp)
+            {
+                temp.amount=hit.Length;
+                temp.timer = 0;
+            }
+        }
+        
         // to modify the camera positions until they are right these are both in update
         // set the camera rotation to the desired rotation
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(Angle),Time.deltaTime);
