@@ -9,19 +9,17 @@ public class HenCallSystem : MonoBehaviour
 
     void Start()
     {
-        // Initializing the chicks array
-        
-        chicks = GameObject.FindObjectOfType<GameTime>();
+        chicks = FindObjectOfType<GameTime>();
     }
 
     private void Update()
     {
-        if (Input.GetAxis("A_Button") >0)
+        if (HenCallSystemControls.AButton())
         {
             Follow();
         }
 
-        if (Input.GetAxis("B_Button")>0)
+        if (HenCallSystemControls.BButton())
         {
             StopFollow();
         }
@@ -33,6 +31,7 @@ public class HenCallSystem : MonoBehaviour
         foreach (GameObject chick in chicks.Chicks)
         {
             BabyChickV2 temp = chick.GetComponent<BabyChickV2>();
+            
             if (temp.CurrentState != BabyChickV2.ChickState.Feeding)
             {
                 chick.GetComponent<BabyChickV2>().CurrentState = BabyChickV2.ChickState.Following;
