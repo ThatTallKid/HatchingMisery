@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class HenCallSystem : MonoBehaviour
 {
     private GameTime chicks;
+    public float radius = 3;
 
     void Start()
     {
@@ -34,7 +35,10 @@ public class HenCallSystem : MonoBehaviour
             
             if (temp.CurrentState != BabyChickV2.ChickState.Feeding)
             {
-                chick.GetComponent<BabyChickV2>().CurrentState = BabyChickV2.ChickState.Following;
+                if (Vector3.Distance(temp.transform.position, transform.position) <= radius)
+                {
+                    chick.GetComponent<BabyChickV2>().CurrentState = BabyChickV2.ChickState.Following;
+                }
             }
         }
     }
@@ -47,7 +51,10 @@ public class HenCallSystem : MonoBehaviour
             BabyChickV2 temp = chick.GetComponent<BabyChickV2>();
             if (temp.CurrentState != BabyChickV2.ChickState.Feeding&&temp.CurrentState == BabyChickV2.ChickState.Following)
             {
-                chick.GetComponent<BabyChickV2>().CurrentState = BabyChickV2.ChickState.Stopping;
+                if (Vector3.Distance(temp.transform.position, transform.position) <= radius)
+                {
+                    chick.GetComponent<BabyChickV2>().CurrentState = BabyChickV2.ChickState.Stopping;
+                }
             }
         }
     }
