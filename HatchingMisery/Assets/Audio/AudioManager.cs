@@ -8,9 +8,10 @@ public class AudioManager : MonoBehaviour
     public AudioSource currentMusicTrack;
     public bool playMusicTrack2;
     public bool playMusicTrack3;
-    public HenMovement henMovementScript;
     public int chicksLeft;
-    
+    public int chicCountTrack2;
+    public int chicCountTrack3;
+
 
     void Awake()
     {
@@ -20,8 +21,8 @@ public class AudioManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //henMovementScript = GetComponents<HenMovement>(chickamount);
-        //chickamount = chicksLeft;
+        
+        chicksLeft = PlayerPrefs.GetInt("chicksleft");
 
         currentMusicTrack.clip = musicTrackArray[(0)];
         currentMusicTrack.PlayOneShot(currentMusicTrack.clip);
@@ -30,7 +31,7 @@ public class AudioManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playMusicTrack2 == true)
+        if (chicksLeft <= chicCountTrack2)
         {
             currentMusicTrack.Stop();
 
@@ -39,7 +40,7 @@ public class AudioManager : MonoBehaviour
             currentMusicTrack.Play();
         }
 
-        if (playMusicTrack3 == true)
+        if (chicksLeft <= chicCountTrack3)
         {
             currentMusicTrack.Stop();
 
@@ -47,31 +48,5 @@ public class AudioManager : MonoBehaviour
             currentMusicTrack.PlayOneShot(currentMusicTrack.clip);
             currentMusicTrack.Play();
         }
-    }
-
-    public void PlayMusicTrack2()
-    {
-       if (chicksLeft <= 12)
-        {
-            playMusicTrack2 = true;
-        }
-        else
-        {
-            playMusicTrack2 = false;
-        }
-        
-    }
-
-    public void PlayMusicTrack3()
-    {
-        if (chicksLeft <= 5)
-        {
-            playMusicTrack3 = true;
-        }
-        else
-        {
-            playMusicTrack3 = false;
-        }
-        
     }
 }
