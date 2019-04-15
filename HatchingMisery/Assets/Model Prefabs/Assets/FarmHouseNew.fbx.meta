@@ -1,15 +1,14 @@
 fileFormatVersion: 2
-guid: aba0c28c11762c84c9c0209fc3d3beef
+guid: c38c0cbf2630fce47944a5134193fecd
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Farmhouse
     400000: //RootNode
-    400002: Farmhouse
-    2100000: FarmhouseMat
-    2300000: Farmhouse
-    3300000: Farmhouse
+    2100000: verandah
+    2100002: Farm_House
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: Farmhouse
   externalObjects: {}
   materials:
