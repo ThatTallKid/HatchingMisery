@@ -7,6 +7,8 @@ public class HenCallSystem : MonoBehaviour
 {
     private GameTime chicks;
     public float radius = 3;
+    public AudioSource henCome;
+    public AudioSource henStop;
 
     void Start()
     {
@@ -18,11 +20,13 @@ public class HenCallSystem : MonoBehaviour
         if (HenCallSystemControls.AButton())
         {
             Follow();
+            henCome.PlayOneShot(henCome.clip);
         }
 
         if (HenCallSystemControls.BButton())
         {
             StopFollow();
+            henStop.PlayOneShot(henStop.clip);
         }
     }
 
@@ -32,7 +36,7 @@ public class HenCallSystem : MonoBehaviour
         foreach (GameObject chick in chicks.Chicks)
         {
             BabyChickV2 temp = chick.GetComponent<BabyChickV2>();
-            
+
             if (temp.CurrentState != BabyChickV2.ChickState.Feeding)
             {
                 if (Vector3.Distance(temp.transform.position, transform.position) <= radius)
@@ -49,7 +53,7 @@ public class HenCallSystem : MonoBehaviour
         foreach (GameObject chick in chicks.Chicks)
         {
             BabyChickV2 temp = chick.GetComponent<BabyChickV2>();
-            if (temp.CurrentState != BabyChickV2.ChickState.Feeding&&temp.CurrentState == BabyChickV2.ChickState.Following)
+            if (temp.CurrentState != BabyChickV2.ChickState.Feeding && temp.CurrentState == BabyChickV2.ChickState.Following)
             {
                 if (Vector3.Distance(temp.transform.position, transform.position) <= radius)
                 {

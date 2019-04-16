@@ -28,16 +28,23 @@ public class HawkMovementV2 : MonoBehaviour
                 {
                     // reset swooping value
                     swoopvalue = 0;
-                    anims.SetBool("Grab",false);
+                    anims.SetBool("Grab", false);
+
+                }
+                if (value == states.Swooping)
+                {
+                    hawkCall.PlayOneShot(hawkCall.clip);
                 }
             }
             currentstate = value;
-        } 
+        }
     }
 
     public Projector shadow;
     public Renderer show;
     public Animator anims;
+    public AudioSource hawkCall;
+    public AudioSource chickScream;
 
     // start off screen a distance, above the camera height
     public float startswoopheight;
@@ -45,7 +52,7 @@ public class HawkMovementV2 : MonoBehaviour
     public float warningtime = 7;
     public float totalswooptime = 5;
     public int maxchicksperswoop = 2;
-    
+
     private Vector3 target = Vector3.zero;
     private float swoopvalue = 0;
     private Vector3 startswooppoint = Vector3.zero;
@@ -67,9 +74,9 @@ public class HawkMovementV2 : MonoBehaviour
     void FixedUpdate()
     {
         // no need to draw object
-        show.enabled = (Currentstate==states.Swooping);
+        show.enabled = (Currentstate == states.Swooping);
         shadow.enabled = (Currentstate == states.Warning);
-        if (currentstate == states.Elsewhere)
+        if (Currentstate == states.Elsewhere)
         {
             searchtimer += Time.deltaTime;
             if (searchtimer >= idletime)
@@ -79,7 +86,7 @@ public class HawkMovementV2 : MonoBehaviour
             }
         }
 
-        if (currentstate == states.Surveying)
+        if (Currentstate == states.Surveying)
         {
             Vector3 temptarget = Vector3.zero;
             foreach (GameObject item in chicks.Chicks)
@@ -104,42 +111,42 @@ public class HawkMovementV2 : MonoBehaviour
                     float temp = choosedir(target);
                     Debug.Log(temp);
                     target.y = 1;
-                    currentstate = states.Warning;
+                    Currentstate = states.Warning;
                 }
             }
         }
         // set state to warning then swap to swooping and reverse along the path
         // don't do this all the time, have it cut off when the material color is within a limit of the target
-        if (currentstate == states.Warning)
+        if (Currentstate == states.Warning)
         {
-            swoopvalue += Time.fixedDeltaTime; 
+            swoopvalue += Time.fixedDeltaTime;
             //todo when we have the projector material installed re-enable the projector
             //shadow.farClipPlane = Mathf.Lerp(startswoopheight, startswoopheight + 4,Mathf.InverseLerp(0,Vector3.Distance(startswooppoint,endswooppoint),Vector3.Distance(transform.position,startswooppoint)));
             //shadow.material.color = new Color(shadow.material.color.r,shadow.material.color.g,shadow.material.color.b,Mathf.Lerp(0,1,Mathf.InverseLerp(0,Vector3.Distance(startswooppoint,endswooppoint),Vector3.Distance(transform.position,startswooppoint))));
-            gameObject.transform.position = Vector3.Lerp(endswooppoint, startswooppoint,swoopvalue/warningtime);
-            gameObject.transform.rotation = Quaternion.LookRotation((startswooppoint-endswooppoint).normalized,Vector3.up);
+            gameObject.transform.position = Vector3.Lerp(endswooppoint, startswooppoint, swoopvalue / warningtime);
+            gameObject.transform.rotation = Quaternion.LookRotation((startswooppoint - endswooppoint).normalized, Vector3.up);
             if (swoopvalue >= warningtime)
             {
-                currentstate = states.Swooping;
+                Currentstate = states.Swooping;
                 swoopvalue = 0;
             }
         }
-        else if(currentstate == states.Swooping)
+        else if (Currentstate == states.Swooping)
         {
             swoopvalue += Time.fixedDeltaTime;
             Vector3 gradient = Vector3.zero;
             float startdist = Vector2.Distance(new Vector2(startswooppoint.x, startswooppoint.z),
                 new Vector2(target.x, target.z));
-            float dist = startdist/ Vector2.Distance(new Vector2(startswooppoint.x, startswooppoint.z),new Vector2(endswooppoint.x, endswooppoint.z));
+            float dist = startdist / Vector2.Distance(new Vector2(startswooppoint.x, startswooppoint.z), new Vector2(endswooppoint.x, endswooppoint.z));
             dist *= totalswooptime;
-            
+
             // setup waypoints to have the Hawk smoothly follow
-            Vector3 templerpstart = Vector3.Lerp(Vector3.Lerp(startswooppoint,new Vector3(startswooppoint.x,target.y,startswooppoint.z),swoopvalue/dist),
-                Vector3.Lerp(new Vector3(startswooppoint.x,target.y,startswooppoint.z),target,swoopvalue/dist),
-                swoopvalue/dist);
-            Vector3 templerpend = Vector3.Lerp(Vector3.Lerp(target,new Vector3(endswooppoint.x,target.y,endswooppoint.z),((swoopvalue-dist)/(totalswooptime - dist))),
-                Vector3.Lerp(new Vector3(endswooppoint.x,target.y,endswooppoint.z),endswooppoint,((swoopvalue-dist)/(totalswooptime-dist))),
-                ((swoopvalue-dist)/(totalswooptime-dist)));
+            Vector3 templerpstart = Vector3.Lerp(Vector3.Lerp(startswooppoint, new Vector3(startswooppoint.x, target.y, startswooppoint.z), swoopvalue / dist),
+                Vector3.Lerp(new Vector3(startswooppoint.x, target.y, startswooppoint.z), target, swoopvalue / dist),
+                swoopvalue / dist);
+            Vector3 templerpend = Vector3.Lerp(Vector3.Lerp(target, new Vector3(endswooppoint.x, target.y, endswooppoint.z), ((swoopvalue - dist) / (totalswooptime - dist))),
+                Vector3.Lerp(new Vector3(endswooppoint.x, target.y, endswooppoint.z), endswooppoint, ((swoopvalue - dist) / (totalswooptime - dist))),
+                ((swoopvalue - dist) / (totalswooptime - dist)));
             if (swoopvalue <= dist)
             {
                 gradient = templerpstart - gameObject.transform.position;
@@ -156,7 +163,7 @@ public class HawkMovementV2 : MonoBehaviour
                 heldchicks = 0;
             }
 
-            transform.LookAt(gameObject.transform.position+gradient);
+            transform.LookAt(gameObject.transform.position + gradient);
         }
     }
 
@@ -164,10 +171,10 @@ public class HawkMovementV2 : MonoBehaviour
     {
         RaycastHit hit;
         // get layer mask working correctly, use for hidden collisions of objects player can go under
-        string[] tempnames = {"Default", "HawkCol"};
+        string[] tempnames = { "Default", "HawkCol" };
         LayerMask temp = LayerMask.GetMask(tempnames);
-        Physics.Raycast(target+new Vector3(0,0,0), direction, out hit,10000,temp);
-        
+        Physics.Raycast(target + new Vector3(0, 0, 0), direction, out hit, 10000, temp);
+
         return hit;
     }
 
@@ -180,17 +187,17 @@ public class HawkMovementV2 : MonoBehaviour
 
         RaycastHit tempforward = new RaycastHit();
         RaycastHit tempbackward = new RaycastHit();
-        
+
         for (float i = 0; i < 180; i++)
         {
             float rad = Mathf.Deg2Rad * i;
-            Vector3 direction = new Vector3(Mathf.Sin(rad),0,Mathf.Cos(rad));
-            RaycastHit forward = checktarget(target,direction);
-            RaycastHit backward = checktarget(target,-direction);
+            Vector3 direction = new Vector3(Mathf.Sin(rad), 0, Mathf.Cos(rad));
+            RaycastHit forward = checktarget(target, direction);
+            RaycastHit backward = checktarget(target, -direction);
             if (Vector3.Distance(forward.point, backward.point) > largestdist)
             {
                 largestdist = Vector3.Distance(forward.point, backward.point);
-                largestdir = new Vector3(Mathf.Sin(rad),0,Mathf.Cos(rad));
+                largestdir = new Vector3(Mathf.Sin(rad), 0, Mathf.Cos(rad));
                 tempforward = forward;
                 tempbackward = backward;
             }
@@ -201,7 +208,7 @@ public class HawkMovementV2 : MonoBehaviour
         {
             if (tempforward.collider.bounds.max.y > startswoopheight)
             {
-                startswooppoint = new Vector3(tempforward.point.x, tempforward.collider.bounds.max.y,tempforward.point.z);
+                startswooppoint = new Vector3(tempforward.point.x, tempforward.collider.bounds.max.y, tempforward.point.z);
             }
             else
             {
@@ -212,7 +219,7 @@ public class HawkMovementV2 : MonoBehaviour
         {
             if (tempbackward.collider.bounds.max.y > startswoopheight)
             {
-                endswooppoint = new Vector3(tempbackward.point.x, tempbackward.collider.bounds.max.y,tempbackward.point.z);
+                endswooppoint = new Vector3(tempbackward.point.x, tempbackward.collider.bounds.max.y, tempbackward.point.z);
             }
             else
             {
@@ -230,7 +237,8 @@ public class HawkMovementV2 : MonoBehaviour
         {
             if (heldchicks == 0)
             {
-                anims.SetBool("Grab",true);
+                anims.SetBool("Grab", true);
+                chickScream.Play();
             }
             if (heldchicks < maxchicksperswoop)
             {
@@ -239,7 +247,7 @@ public class HawkMovementV2 : MonoBehaviour
                 //todo maybe later move the chicks to a hold position and deleted them off screen? doesn't really matter is
                 //other.transform.SetParent(transform);
                 chicks.Chicks.Remove(other.gameObject);
-                PlayerPrefs.SetInt("chicksleft", PlayerPrefs.GetInt("chicksleft")-1);
+                PlayerPrefs.SetInt("chicksleft", PlayerPrefs.GetInt("chicksleft") - 1);
                 Destroy(other.gameObject);
                 heldchicks++;
             }

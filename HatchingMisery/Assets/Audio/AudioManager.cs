@@ -49,7 +49,6 @@ public class AudioManager : MonoBehaviour
         while (_track.volume > 0f)
         {
             _track.volume -= fadeoutRate;
-            Debug.Log("volume is " + _track.volume);
             yield return new WaitForSeconds(.05f);
         }
         _hasFadeStarted = false;
