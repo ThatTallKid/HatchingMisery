@@ -20,7 +20,7 @@ public class ScreenFade : MonoBehaviour
             timer += Time.deltaTime;
             foreach (var item in dithermat)
             {
-                if(item.material.shader.name == "Dither")item.material.SetFloat("_Transparency",Mathf.Lerp(item.material.GetFloat("_Transparency"),1/(amount+2),0.1f));
+                if (item.material.shader.name == "Custom/Dither")item.material.SetFloat("_Transparency",Mathf.Lerp(item.material.GetFloat("_Transparency"),1/(amount+2),0.1f));
             }
         }
         else if (timer <= 3)
@@ -28,7 +28,7 @@ public class ScreenFade : MonoBehaviour
             timer += Time.deltaTime;
             foreach (var item in dithermat)
             {
-                if(item.material.shader.name == "Dither")item.material.SetFloat("_Transparency",Mathf.Lerp(item.material.GetFloat("_Transparency"),1f,(timer-2f)));
+                if(item.material.shader.name == "Custom/Dither")item.material.SetFloat("_Transparency",Mathf.Lerp(item.material.GetFloat("_Transparency"),1f,(timer-2f)));
             }
         }
     }
