@@ -4,49 +4,68 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    public AudioClip[] musicTrackArray;
-    public AudioSource currentMusicTrack;
-    public bool playMusicTrack2;
-    public bool playMusicTrack3;
+    public AudioSource musicTrack1;
+    public AudioSource musicTrack2;
+    public AudioSource musicTrack3;
     public int chicksLeft;
-    public int chicCountTrack2;
-    public int chicCountTrack3;
+    public int chickCountTrack2;
+    public int chickCountTrack3;
 
 
-    void Awake()
-    {
-        currentMusicTrack = GetComponent<AudioSource>();
-    }
+    private bool _hasFadeStarted = false;
+
+    [Range(.01f, .5f)] public float fadeoutRate;
 
     // Start is called before the first frame update
     void Start()
     {
-        
-        chicksLeft = PlayerPrefs.GetInt("chicksleft");
 
-        currentMusicTrack.clip = musicTrackArray[(0)];
-        currentMusicTrack.PlayOneShot(currentMusicTrack.clip);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (chicksLeft <= chicCountTrack2)
-        {
-            currentMusicTrack.Stop();
+        chicksLeft = PlayerPrefs.GetInt("chicksleft");
 
-            currentMusicTrack.clip = musicTrackArray[(1)];
-            currentMusicTrack.PlayOneShot(currentMusicTrack.clip);
-            currentMusicTrack.Play();
+        if (chicksLeft <= chickCountTrack2 && !_hasFadeStarted)
+        {
+            _hasFadeStarted = true;
+            StartCoroutine(FadeOut(musicTrack1));
+
+            StartCoroutine(FadeIn(musicTrack2));
         }
 
-        if (chicksLeft <= chicCountTrack3)
+        if (chicksLeft <= chickCountTrack3 && !_hasFadeStarted)
         {
-            currentMusicTrack.Stop();
+            _hasFadeStarted = true;
+            StartCoroutine(FadeOut(musicTrack2));
 
-            currentMusicTrack.clip = musicTrackArray[(2)];
-            currentMusicTrack.PlayOneShot(currentMusicTrack.clip);
-            currentMusicTrack.Play();
+            StartCoroutine(FadeIn(musicTrack3));
         }
+    }
+
+    IEnumerator FadeOut(AudioSource _track)
+    {
+        while (_track.volume > 0f)
+        {
+            _track.volume -= fadeoutRate;
+            Debug.Log("volume is " + _track.volume);
+            yield return new WaitForSeconds(.05f);
+        }
+        _hasFadeStarted = false;
+    }
+
+
+    IEnumerator FadeIn(AudioSource _track)
+    {
+        while (_track.volume < 1f)
+        {
+
+            _track.volume += fadeoutRate;
+            yield return new WaitForSeconds(.05f);
+
+        }
+
+        _hasFadeStarted = false;
     }
 }

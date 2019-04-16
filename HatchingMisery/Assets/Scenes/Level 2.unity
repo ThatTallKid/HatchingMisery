@@ -8568,15 +8568,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1882792055, guid: c7c645d1e4312df41a6809ce02ced1f1, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5822816306503162064, guid: c7c645d1e4312df41a6809ce02ced1f1,
-        type: 3}
-      propertyPath: chickamount
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 316999216, guid: c7c645d1e4312df41a6809ce02ced1f1, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0.7071068
@@ -8595,6 +8586,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 316999216, guid: c7c645d1e4312df41a6809ce02ced1f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822816306503162064, guid: c7c645d1e4312df41a6809ce02ced1f1,
+        type: 3}
+      propertyPath: chickamount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1882792055, guid: c7c645d1e4312df41a6809ce02ced1f1, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -84182,6 +84182,36 @@ PrefabInstance:
       propertyPath: henMovementScript
       value: 
       objectReference: {fileID: 1831600373}
+    - target: {fileID: 7866818653488249776, guid: 7b1932c96e0d30040ba3fa40633b223f,
+        type: 3}
+      propertyPath: fadeoutRate
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 813807565195827832, guid: 7b1932c96e0d30040ba3fa40633b223f,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1076441623533151478, guid: 7b1932c96e0d30040ba3fa40633b223f,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1076441623533151478, guid: 7b1932c96e0d30040ba3fa40633b223f,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3046461143184279499, guid: 7b1932c96e0d30040ba3fa40633b223f,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3046461143184279499, guid: 7b1932c96e0d30040ba3fa40633b223f,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b1932c96e0d30040ba3fa40633b223f, type: 3}
 --- !u!1001 &4308581904171474650
