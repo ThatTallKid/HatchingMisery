@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 424978620118648920}
   - component: {fileID: 1194312321126210645}
   - component: {fileID: 6361706452315950345}
+  - component: {fileID: 6874886300601687969}
   m_Layer: 0
   m_Name: Bag_Seed
   m_TagString: Untagged
@@ -57,7 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 63d72b72b3267f848a2b1c858705eb18, type: 3}
+  - {fileID: 2100000, guid: 4f1bbaecbf4de7741993e45a5a89ca57, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -77,3 +78,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &6874886300601687969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4850171735148972806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851846f62f49e5f4bbcee2f6d1e31eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GrainAmount: 0
+  feedtime: 0
+  feeding: 0
+  Radius: 0
