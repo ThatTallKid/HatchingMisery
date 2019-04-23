@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class HenMovement : MonoBehaviour
 {
     public Rigidbody body;
-    public int chickamount;
+    public int chickamount = 10;
     public GameObject ChickPrefab;
     public Animator anims;
     public float slowspeed = 0.5f;
@@ -16,6 +16,7 @@ public class HenMovement : MonoBehaviour
 
     int runHash = Animator.StringToHash("IsRunning");
     int mudHash = Animator.StringToHash("InMud");
+    public bool finallevel = false;
     public int Inmud
     {
         get => inmud;
@@ -55,8 +56,11 @@ public class HenMovement : MonoBehaviour
         GameTime tempgame = FindObjectOfType<GameTime>();
         if (tempgame)
         {
-            GameTime.checklevel();
-            chickamount = PlayerPrefs.GetInt("chicksleft");
+            if (chickamount == 10)
+            {
+                GameTime.checklevel(tempgame.chickstartgameamount);
+                chickamount = PlayerPrefs.GetInt("chicksleft");
+            }
         }
         else
         {
@@ -70,6 +74,8 @@ public class HenMovement : MonoBehaviour
             if (tempgame)
             {
                 tempgame.Chicks.Add(temp);
+                finallevel = tempgame.finallevel;
+                temp.GetComponent<BabyChickV2>().final = finallevel;
             }
         }
     }
@@ -80,9 +86,15 @@ public class HenMovement : MonoBehaviour
         anims.SetBool(runHash,(Nav.velocity.magnitude > 0.1f));
         //anims.speed = Nav.velocity.magnitude;
         Nav.isStopped = false;
-        
-        
-        Nav.destination = transform.position + new Vector3(Input.GetAxis("Vertical"),0,-Input.GetAxis("Horizontal")).normalized;
+
+        if (finallevel)
+        {
+            Nav.destination = transform.position + new Vector3(1,0,-Input.GetAxis("Horizontal")).normalized;
+        }
+        else
+        {
+            Nav.destination = transform.position + new Vector3(Input.GetAxis("Vertical"),0,-Input.GetAxis("Horizontal")).normalized;
+        }
 
         if (Input.GetButtonDown("Vertical"))
         {

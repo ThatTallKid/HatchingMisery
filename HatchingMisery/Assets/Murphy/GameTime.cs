@@ -8,10 +8,12 @@ using System;   // This is for the events
 public class GameTime : MonoBehaviour
 {
     public bool tutorial = false;
+    public bool finallevel = false;
     public int ChicksLeft;
     public float gametime;
     public GameObject UniqueChick;// for later
     public List<GameObject> Chicks;
+    public int chickstartgameamount = 10;
 
     // V's code
     public float AfternoonTime;
@@ -38,12 +40,12 @@ public class GameTime : MonoBehaviour
         PlayerPrefs.SetInt("currentfeed", 0);
     }
 
-    public static void checklevel()
+    public static void checklevel(int a)
     {
         if (SceneManager.GetActiveScene().name == "Level 2")
         {
             PlayerPrefs.SetInt("feedtotal", 0);
-            PlayerPrefs.SetInt("chicksleft", 10);
+            PlayerPrefs.SetInt("chicksleft", a);
         }
     }
 
@@ -51,7 +53,7 @@ public class GameTime : MonoBehaviour
     void Update()
     {
         // todo step by step logic will be needed in the tutorial to teach each part of the game in turn
-        if (!tutorial)
+        if (!tutorial&&!finallevel)
         {
 
             gametime = gametime + Time.deltaTime * 1;

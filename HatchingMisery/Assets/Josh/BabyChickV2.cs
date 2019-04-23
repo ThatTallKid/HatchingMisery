@@ -15,6 +15,13 @@ public class BabyChickV2 : MonoBehaviour
     public float boredrange = 4;
     private bool startedfollowing = false;
     private int inmud = 0;
+    
+    public Animator anims;
+    int walkHash = Animator.StringToHash("Walking");
+    int mudHash = Animator.StringToHash("InMud");
+    int feedHash = Animator.StringToHash("Feeding");
+
+    public bool final = false;
     public int Inmud
     {
         get => inmud;
@@ -22,11 +29,19 @@ public class BabyChickV2 : MonoBehaviour
         {
             if (inmud != 0)
             {
-                if(value == 0)FollowSpeed /= slowspeed;
+                if (value == 0)
+                {
+                    FollowSpeed /= slowspeed;
+                    anims.SetBool(mudHash,false);
+                }
             }
             else
             {
-                if(value != 0)FollowSpeed *= slowspeed;
+                if (value != 0)
+                {
+                    FollowSpeed *= slowspeed;
+                    anims.SetBool(mudHash,true);
+                }
             }
             inmud = value;
         }
@@ -76,6 +91,7 @@ public class BabyChickV2 : MonoBehaviour
     void FixedUpdate()
     {
         Nav.isStopped = false;
+        if (final) CurrentState = ChickState.Following;
         switch (CurrentState)
         {
             case ChickState.Following:
@@ -105,8 +121,14 @@ public class BabyChickV2 : MonoBehaviour
                     Nav.stoppingDistance = 0.1f;
                 }
 
+                if (Vector3.Distance(transform.position, Nav.destination) < 0.11f)
+                {
+                    anims.SetBool(feedHash,true);
+                }
+
                 if (!CurrentFood)
                 {
+                    anims.SetBool(feedHash,false);
                     Nav.destination = transform.position + (new Vector3(Random.Range(-1f,1f),0,Random.Range(-1f,1f)).normalized * Random.Range(0f,2f));
                     CurrentState = ChickState.Wandering;
                 }
@@ -144,6 +166,17 @@ public class BabyChickV2 : MonoBehaviour
             }
                 break;
         }
+
+        if (Vector3.Distance(transform.position, Nav.destination) < 0.11f)
+        {
+            anims.SetBool(walkHash,false);
+        }
+        else
+        {
+            anims.SetBool(walkHash,true);
+        }
+        
+
         Nav.speed = FollowSpeed;
     }
 

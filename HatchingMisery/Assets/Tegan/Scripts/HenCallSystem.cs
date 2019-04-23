@@ -10,23 +10,28 @@ public class HenCallSystem : MonoBehaviour
     public AudioSource henCome;
     public AudioSource henStop;
 
+    public bool final = false;
     void Start()
     {
         chicks = FindObjectOfType<GameTime>();
+        final = chicks.finallevel;
     }
 
     private void Update()
     {
-        if (HenCallSystemControls.AButton())
+        if (!final)
         {
-            Follow();
-            henCome.PlayOneShot(henCome.clip);
-        }
+            if (HenCallSystemControls.AButton())
+            {
+                Follow();
+                henCome.PlayOneShot(henCome.clip);
+            }
 
-        if (HenCallSystemControls.BButton())
-        {
-            StopFollow();
-            henStop.PlayOneShot(henStop.clip);
+            if (HenCallSystemControls.BButton())
+            {
+                StopFollow();
+                henStop.PlayOneShot(henStop.clip);
+            }
         }
     }
 
