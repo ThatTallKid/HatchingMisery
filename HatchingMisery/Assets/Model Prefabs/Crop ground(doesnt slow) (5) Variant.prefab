@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 133848882, guid: 2ffff78688e8e6147b1a0691131d130c, type: 3}
       propertyPath: m_Name
-      value: Crop ground(doesnt slow) (5)
+      value: Crop ground(doesnt slow) (5) Variant
       objectReference: {fileID: 0}
     - target: {fileID: 133848883, guid: 2ffff78688e8e6147b1a0691131d130c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -63,6 +63,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.344021
       objectReference: {fileID: 0}
+    - target: {fileID: 914193836, guid: 2ffff78688e8e6147b1a0691131d130c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f31cf3dfd0e34b64693eecba961a928c, type: 2}
     - target: {fileID: 3254167355512838986, guid: 2ffff78688e8e6147b1a0691131d130c,
         type: 3}
       propertyPath: m_Enabled
@@ -118,10 +122,7 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 914193836, guid: 2ffff78688e8e6147b1a0691131d130c, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: f31cf3dfd0e34b64693eecba961a928c, type: 2}
     m_RemovedComponents:
     - {fileID: 8024568316810029464, guid: 2ffff78688e8e6147b1a0691131d130c, type: 3}
+    - {fileID: 3936918654296840918, guid: 2ffff78688e8e6147b1a0691131d130c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2ffff78688e8e6147b1a0691131d130c, type: 3}
