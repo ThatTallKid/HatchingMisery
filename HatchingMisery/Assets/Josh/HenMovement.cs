@@ -11,6 +11,8 @@ public class HenMovement : MonoBehaviour
     public Animator anims;
     public float slowspeed = 0.5f;
     public int inmud = 0;
+    public AudioSource walking;
+    public AudioSource walkingMud;
 
     int runHash = Animator.StringToHash("IsRunning");
     int mudHash = Animator.StringToHash("InMud");
@@ -34,6 +36,8 @@ public class HenMovement : MonoBehaviour
                 {
                     Nav.speed *= slowspeed;
                     anims.SetBool(mudHash,true);
+
+                    walkingMud.PlayOneShot(walkingMud.clip);
                 }
             }
             inmud = value;
@@ -79,6 +83,30 @@ public class HenMovement : MonoBehaviour
         
         
         Nav.destination = transform.position + new Vector3(Input.GetAxis("Vertical"),0,-Input.GetAxis("Horizontal")).normalized;
+
+        if (Input.GetButtonDown("Vertical"))
+        {
+            walking.PlayOneShot(walking.clip);
+        }
+        else
+        {
+            if (Input.GetButtonUp("Vertical"))
+            {
+                walking.Stop();
+            }
+        }
+
+        if (Input.GetButtonDown("Horizontal"))
+        {
+            walking.PlayOneShot(walking.clip);
+        }
+        else
+        {
+            if (Input.GetButtonUp("Horizontal"))
+            {
+                walking.Stop();
+            }
+        }
         // move in direction indicated by controller regardless of what the controller is
         //body.AddForce(Input.GetAxis("Vertical")/5,0,-Input.GetAxis("Horizontal")/5,ForceMode.VelocityChange);
     }

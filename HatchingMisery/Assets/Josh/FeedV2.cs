@@ -7,6 +7,7 @@ public class FeedV2 : MonoBehaviour   // Venus
     public float feedtime;
     public bool feeding;
     public float Radius;
+    public AudioSource eating;
 
     void Update()
     {
@@ -30,6 +31,7 @@ public class FeedV2 : MonoBehaviour   // Venus
             //Debug.Log("test");
             other.gameObject.GetComponent<BabyChickV2>().TriggeredFeed(transform.position,Radius,gameObject);
             feeding = true;
+            eating.Play();
         }
     }
 }

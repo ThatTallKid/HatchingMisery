@@ -57,7 +57,7 @@ public class AudioManager : MonoBehaviour
 
     IEnumerator FadeIn(AudioSource _track)
     {
-        while (_track.volume < 1f)
+        while (_track.volume < 0.35f)
         {
 
             _track.volume += fadeoutRate;
