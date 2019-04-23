@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 407882481}
   - component: {fileID: 1178812440}
   - component: {fileID: 1178812439}
+  - component: {fileID: 1113702894269091289}
   - component: {fileID: 1178812438}
   - component: {fileID: 1178812437}
   - component: {fileID: 1178812436}
@@ -86,6 +87,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1113702894269091289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178812431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee52214f0853d3446b81ec7f9fbce926, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dithermat: []
+  timer: 7
+  amount: 1
 --- !u!65 &1178812438
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -228,10 +244,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 407882481}
     m_Modifications:
-    - target: {fileID: 1384209453, guid: 3cf50c36b800ab349aa28bc93675be75, type: 3}
-      propertyPath: m_Name
-      value: open_shed
-      objectReference: {fileID: 0}
     - target: {fileID: 1384209454, guid: 3cf50c36b800ab349aa28bc93675be75, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.0659
@@ -275,6 +287,10 @@ PrefabInstance:
     - target: {fileID: 1384209454, guid: 3cf50c36b800ab349aa28bc93675be75, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384209453, guid: 3cf50c36b800ab349aa28bc93675be75, type: 3}
+      propertyPath: m_Name
+      value: open_shed
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cf50c36b800ab349aa28bc93675be75, type: 3}

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 638904841}
   - component: {fileID: 638904840}
   - component: {fileID: 638904839}
+  - component: {fileID: 1110505042750094366}
   m_Layer: 0
   m_Name: Silo1
   m_TagString: Untagged
@@ -107,6 +108,36 @@ CapsuleCollider:
   m_Height: 0.29099044
   m_Direction: 1
   m_Center: {x: 0.042412166, y: 0.06861389, z: -0.08957424}
+--- !u!114 &1110505042750094366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638904838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee52214f0853d3446b81ec7f9fbce926, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dithermat: []
+  timer: 7
+  amount: 1
+--- !u!114 &7773459759854198981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5776040144429366573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee52214f0853d3446b81ec7f9fbce926, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dithermat: []
+  timer: 7
+  amount: 1
 --- !u!1001 &4492677914414016981
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -114,11 +145,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 520943810}
     m_Modifications:
-    - target: {fileID: 2521196321673900574, guid: 5610cbf3a8957fe4c9817164e44b8f5b,
-        type: 3}
-      propertyPath: m_Name
-      value: FarmAsset_Silo2
-      objectReference: {fileID: 0}
     - target: {fileID: 4547722874985866640, guid: 5610cbf3a8957fe4c9817164e44b8f5b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -189,11 +215,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.010144702
       objectReference: {fileID: 0}
+    - target: {fileID: 2521196321673900574, guid: 5610cbf3a8957fe4c9817164e44b8f5b,
+        type: 3}
+      propertyPath: m_Name
+      value: FarmAsset_Silo2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5610cbf3a8957fe4c9817164e44b8f5b, type: 3}
 --- !u!4 &91746680534240325 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4547722874985866640, guid: 5610cbf3a8957fe4c9817164e44b8f5b,
+    type: 3}
+  m_PrefabInstance: {fileID: 4492677914414016981}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5776040144429366573 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7958334611798906104, guid: 5610cbf3a8957fe4c9817164e44b8f5b,
     type: 3}
   m_PrefabInstance: {fileID: 4492677914414016981}
   m_PrefabAsset: {fileID: 0}

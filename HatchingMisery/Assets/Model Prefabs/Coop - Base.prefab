@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5469794795250916797}
   - component: {fileID: 6966544331847675595}
   - component: {fileID: 6649066071938047901}
+  - component: {fileID: 5006042472754374054}
   m_Layer: 0
   m_Name: Coop - Base
   m_TagString: Untagged
@@ -78,6 +79,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &5006042472754374054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3990287925272528432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee52214f0853d3446b81ec7f9fbce926, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dithermat: []
+  timer: 7
+  amount: 1
 --- !u!1001 &1656084282269991419
 PrefabInstance:
   m_ObjectHideFlags: 0

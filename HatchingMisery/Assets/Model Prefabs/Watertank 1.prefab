@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 701836535}
   - component: {fileID: 701836534}
   - component: {fileID: 701836533}
+  - component: {fileID: 1545812917526835798}
   m_Layer: 0
   m_Name: Watertank 1
   m_TagString: Untagged
@@ -93,6 +94,21 @@ CapsuleCollider:
   m_Height: 0.22488673
   m_Direction: 1
   m_Center: {x: 0.0000000047683715, y: 0.025598602, z: -0.000000009536743}
+--- !u!114 &1545812917526835798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701836532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee52214f0853d3446b81ec7f9fbce926, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dithermat: []
+  timer: 7
+  amount: 1
 --- !u!1001 &6513981491973261569
 PrefabInstance:
   m_ObjectHideFlags: 0
