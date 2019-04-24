@@ -120,8 +120,10 @@ public class BabyChickV2 : MonoBehaviour
                     startedfollowing = false;
                     Nav.stoppingDistance = 0.1f;
                 }
+                
+                //Debug.Log(Vector3.Distance(transform.position, Nav.destination));
 
-                if (Vector3.Distance(transform.position, Nav.destination) < 0.11f)
+                if (Vector3.Distance(transform.position, Nav.destination) < 0.13f)
                 {
                     anims.SetBool(feedHash,true);
                 }
@@ -167,14 +169,7 @@ public class BabyChickV2 : MonoBehaviour
                 break;
         }
 
-        if (Vector3.Distance(transform.position, Nav.destination) < 0.11f)
-        {
-            anims.SetBool(walkHash,false);
-        }
-        else
-        {
-            anims.SetBool(walkHash,true);
-        }
+        anims.SetBool(walkHash,(Nav.velocity.magnitude > 0));
         
 
         Nav.speed = FollowSpeed;
