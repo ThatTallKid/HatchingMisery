@@ -13,7 +13,7 @@ public class LevelScoreScreen : MonoBehaviour
     public Text txtchicksLeft;
     public int intchicksleft;
     public string strchicksleft;
-    public GameObject Loose;
+    public GameObject[] ChickCounter;
 
     void Start()
     {
@@ -33,17 +33,17 @@ public class LevelScoreScreen : MonoBehaviour
         {
             FedChicks = Mathf.FloorToInt(Mathf.Min((float)intchicksleft ,  (float)feedscore/10)); 
         }
-        
-      
-        
-        txtdeadchicks.text = (intchicksleft - FedChicks).ToString();
+
+       
+        //txtdeadchicks.text = (intchicksleft - FedChicks).ToString();
 
         intchicksleft = FedChicks;
-     
-        txtchicksLeft.text = intchicksleft.ToString();
+        Debug.Log("number here = " + intchicksleft);
+        ChickCounter[intchicksleft].SetActive(true);
+        //txtchicksLeft.text = intchicksleft.ToString();
         if (FedChicks < 1)
         {
-            Loose.SetActive (true);
+            
         }
 
         Debug.Log(PlayerPrefs.GetInt("chicksleft"));
