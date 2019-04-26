@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class HenMovement : MonoBehaviour
 {
     public Rigidbody body;
-    public int chickamount = 10;
+    public int chickamount = 20;
     public GameObject ChickPrefab;
     public Animator anims;
     public float slowspeed = 0.5f;
@@ -56,7 +56,7 @@ public class HenMovement : MonoBehaviour
         GameTime tempgame = FindObjectOfType<GameTime>();
         if (tempgame)
         {
-            if (chickamount == 10)
+            if (chickamount == 20)
             {
                 GameTime.checklevel(tempgame.chickstartgameamount);
                 chickamount = PlayerPrefs.GetInt("chicksleft");
@@ -64,7 +64,7 @@ public class HenMovement : MonoBehaviour
         }
         else
         {
-            chickamount = 10;
+            chickamount = 20;
         }
         // TODO manage the living chicks for first level somehow, ignore player perfs for living chicks in tutorial
         
