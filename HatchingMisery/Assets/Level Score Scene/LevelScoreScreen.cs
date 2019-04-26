@@ -14,37 +14,47 @@ public class LevelScoreScreen : MonoBehaviour
     public int intchicksleft;
     public string strchicksleft;
     public GameObject[] ChickCounter;
+    public float gabetime;
 
     void Start()
     {
         CalcScore();
+        gabetime = 0;
     }
 
+    void Update()
+    {
+        gabetime = gabetime + Time.deltaTime * 1;
+    }
     public void CalcScore()
     {
         Debug.Log("i found a number " + PlayerPrefs.GetInt("feedtotal"));
-        PlayerPrefs.SetInt("feedtotal",PlayerPrefs.GetInt("feedtotal")+PlayerPrefs.GetInt("currentfeed"));
         feedscore = PlayerPrefs.GetInt("currentfeed");
         intchicksleft = PlayerPrefs.GetInt("chicksleft");
-        intchicksleft = FedChicks;
+
         Debug.Log("number here = " + intchicksleft);
 
         // this was sometimes returning negative numbers thanks to the number of feeding zones being variable
         if (intchicksleft * 10 > feedscore)
         {
-            FedChicks = Mathf.FloorToInt(Mathf.Min((float)intchicksleft ,  (float)feedscore/10)); 
+            FedChicks = Mathf.FloorToInt(Mathf.Min((float)intchicksleft, (float)feedscore / 10));
         }
 
-       
+        intchicksleft = FedChicks;
         //txtdeadchicks.text = (intchicksleft - FedChicks).ToString();
 
-        intchicksleft = FedChicks;
+
         Debug.Log("number here = " + intchicksleft);
+        foreach (GameObject obj in ChickCounter)
+        {
+            obj.SetActive(false);
+        }
         ChickCounter[intchicksleft].SetActive(true);
         //txtchicksLeft.text = intchicksleft.ToString();
-        if (FedChicks < 1)
+        if (FedChicks < 1 )
         {
-            
+            SceneManager.LoadScene(0);
+
         }
 
         Debug.Log(PlayerPrefs.GetInt("chicksleft"));

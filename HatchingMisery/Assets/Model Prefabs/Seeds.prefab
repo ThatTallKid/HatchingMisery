@@ -202,7 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 851846f62f49e5f4bbcee2f6d1e31eca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GrainAmount: 3
+  GrainAmount: 30
   feedtime: 2
   feeding: 0
   Radius: 3

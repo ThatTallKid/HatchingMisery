@@ -15,6 +15,9 @@ public class GameTime : MonoBehaviour
     public List<GameObject> Chicks;
     public int chickstartgameamount = 20;
     public GameObject[] ChickUI;
+    public GameObject ScoreScreen;
+    public GameObject Hen;
+    public GameObject Hawk;
 
     // V's code
     public float AfternoonTime;
@@ -39,7 +42,7 @@ public class GameTime : MonoBehaviour
        }
         */
         PlayerPrefs.SetInt("currentfeed", 0);
-        
+
     }
 
     public static void checklevel(int a)
@@ -54,27 +57,48 @@ public class GameTime : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("number bitch" + PlayerPrefs.GetInt("chicksleft")); 
-        ChickUI[PlayerPrefs.GetInt("chicksleft")].SetActive(true);
-        // todo step by step logic will be needed in the tutorial to teach each part of the game in turn
-        if (!tutorial&&!finallevel)
+        Debug.Log("number bitch" + PlayerPrefs.GetInt("chicksleft"));
+        foreach (GameObject obj in ChickUI)
         {
-                        
+            obj.SetActive(false);
+        }
+        ChickUI[PlayerPrefs.GetInt("chicksleft")].SetActive(true);
+
+        
+        // todo step by step logic will be needed in the tutorial to teach each part of the game in turn
+        if (!tutorial && !finallevel)
+        {
+
             gametime = gametime + Time.deltaTime * 1;
+            if (PlayerPrefs.GetInt("chicksleft") < 1)
+            {
+                ScoreScreen.SetActive(true);
+                Hawk.SetActive(false);
+                Hen.SetActive(false);
+                
+            }
 
             if (gametime > 60)
             {
+                //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                ScoreScreen.SetActive(true);
+                Hawk.SetActive(false);
+                Hen.SetActive(false);
+            }
+            if (gametime > 65)
+            {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
             }
 
             // V's code
-            if ((int) gametime == AfternoonTime)
+            if ((int)gametime == AfternoonTime)
             {
                 TimeOfDay = "Afternoon";
                 SunChange(TimeOfDay);
             }
 
-            if ((int) gametime == EveningTime)
+            if ((int)gametime == EveningTime)
             {
                 TimeOfDay = "Evening";
                 SunChange(TimeOfDay);
