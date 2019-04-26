@@ -54,8 +54,8 @@ public class GameTime : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("number bitch" + PlayerPrefs.GetInt("Chicksleft")); 
-        ChickUI[PlayerPrefs.GetInt("Chicksleft")].SetActive(true);
+        Debug.Log("number bitch" + PlayerPrefs.GetInt("chicksleft")); 
+        ChickUI[PlayerPrefs.GetInt("chicksleft")].SetActive(true);
         // todo step by step logic will be needed in the tutorial to teach each part of the game in turn
         if (!tutorial&&!finallevel)
         {
