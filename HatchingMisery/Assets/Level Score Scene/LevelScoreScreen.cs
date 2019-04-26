@@ -26,7 +26,8 @@ public class LevelScoreScreen : MonoBehaviour
         PlayerPrefs.SetInt("feedtotal",PlayerPrefs.GetInt("feedtotal")+PlayerPrefs.GetInt("currentfeed"));
         feedscore = PlayerPrefs.GetInt("currentfeed");
         intchicksleft = PlayerPrefs.GetInt("chicksleft");
-        
+        intchicksleft = FedChicks;
+        Debug.Log("number here = " + intchicksleft);
 
         // this was sometimes returning negative numbers thanks to the number of feeding zones being variable
         if (intchicksleft * 10 > feedscore)

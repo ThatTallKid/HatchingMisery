@@ -52,6 +52,7 @@ public class HawkMovementV2 : MonoBehaviour
     public float warningtime = 7;
     public float totalswooptime = 5;
     public int maxchicksperswoop = 2;
+    public GameObject[] Chickcount;
 
     private Vector3 target = Vector3.zero;
     private float swoopvalue = 0;

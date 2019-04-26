@@ -13,7 +13,8 @@ public class GameTime : MonoBehaviour
     public float gametime;
     public GameObject UniqueChick;// for later
     public List<GameObject> Chicks;
-    public int chickstartgameamount = 10;
+    public int chickstartgameamount = 20;
+    public GameObject[] ChickUI;
 
     // V's code
     public float AfternoonTime;
@@ -38,6 +39,7 @@ public class GameTime : MonoBehaviour
        }
         */
         PlayerPrefs.SetInt("currentfeed", 0);
+        
     }
 
     public static void checklevel(int a)
@@ -45,17 +47,19 @@ public class GameTime : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Level 2")
         {
             PlayerPrefs.SetInt("feedtotal", 0);
-            PlayerPrefs.SetInt("chicksleft", a);
+            PlayerPrefs.SetInt("chicksleft", 20);
         }
     }
 
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("number bitch" + PlayerPrefs.GetInt("Chicksleft")); 
+        ChickUI[PlayerPrefs.GetInt("Chicksleft")].SetActive(true);
         // todo step by step logic will be needed in the tutorial to teach each part of the game in turn
         if (!tutorial&&!finallevel)
         {
-
+                        
             gametime = gametime + Time.deltaTime * 1;
 
             if (gametime > 60)
