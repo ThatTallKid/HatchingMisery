@@ -7,7 +7,7 @@ public class BackToTitle : MonoBehaviour
 {
     public void BacktoTitle()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Title Screen");
     }
     
   

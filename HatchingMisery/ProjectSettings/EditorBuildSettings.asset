@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 10 - Final level - Road.unity
     guid: 0c24fabd870a4704f9549fc7da6ea761
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 6dbed919b3bc8ee4895c099031393316
   m_configObjects: {}

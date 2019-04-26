@@ -72,9 +72,9 @@ public class GameTime : MonoBehaviour
             gametime = gametime + Time.deltaTime * 1;
             if (PlayerPrefs.GetInt("chicksleft") < 1)
             {
-                ScoreScreen.SetActive(true);
-                Hawk.SetActive(false);
-                Hen.SetActive(false);
+               ScoreScreen.SetActive(true);
+               Hawk.SetActive(false);
+               Hen.SetActive(false);
                 
             }
 
