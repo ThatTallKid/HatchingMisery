@@ -87,6 +87,10 @@ GameObject:
   m_Component:
   - component: {fileID: 204272950518144594}
   - component: {fileID: 4583140661729796079}
+  - component: {fileID: 7701373408821780677}
+  - component: {fileID: 8056587670956435441}
+  - component: {fileID: 5786997729329239436}
+  - component: {fileID: 6805955755999207741}
   m_Layer: 0
   m_Name: FarmAsset_Tractor
   m_TagString: Untagged
@@ -124,3 +128,55 @@ MonoBehaviour:
   dithermat: []
   timer: 7
   amount: 1
+--- !u!65 &7701373408821780677
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6326163897367913348}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.366085, y: 1.9779482, z: 1.8878384}
+  m_Center: {x: 2.470581, y: 0.4889741, z: 2.4024553}
+--- !u!65 &8056587670956435441
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6326163897367913348}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.4243546, y: 1.9779482, z: 1.9766064}
+  m_Center: {x: 2.4414463, y: 0.4889741, z: -2.297185}
+--- !u!65 &5786997729329239436
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6326163897367913348}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.7113743, y: 1.9779482, z: 1.644167}
+  m_Center: {x: -3.3825693, y: 0.4889741, z: -1.7069807}
+--- !u!65 &6805955755999207741
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6326163897367913348}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.7113743, y: 1.9779482, z: 1.6845112}
+  m_Center: {x: -3.3825693, y: 0.4889741, z: 1.7564974}

@@ -99,8 +99,8 @@ NavMeshSettings:
     agentTypeID: 0
     agentRadius: 0.25
     agentHeight: 2
-    agentSlope: 45
-    agentClimb: 0.75
+    agentSlope: 60
+    agentClimb: 2
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
@@ -105424,7 +105424,7 @@ PrefabInstance:
     - target: {fileID: 343574933215160779, guid: fab9fec1835441748b38d65ec23d4623,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.00001999855
+      value: -0.0044
       objectReference: {fileID: 0}
     - target: {fileID: 343574933215160779, guid: fab9fec1835441748b38d65ec23d4623,
         type: 3}
@@ -105470,6 +105470,15 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 780907797, guid: fab9fec1835441748b38d65ec23d4623, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7620278950680694771, guid: fab9fec1835441748b38d65ec23d4623,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0991
       objectReference: {fileID: 0}
     - target: {fileID: 1945986128, guid: fab9fec1835441748b38d65ec23d4623, type: 3}
       propertyPath: m_StaticEditorFlags

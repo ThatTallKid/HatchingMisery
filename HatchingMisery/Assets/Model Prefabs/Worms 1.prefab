@@ -99,8 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 851846f62f49e5f4bbcee2f6d1e31eca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GrainAmount: 10
-  feedtime: 3
+  GrainAmount: 5
+  feedtime: 6
   feeding: 0
   Radius: 3
   eating: {fileID: 447546199}
@@ -221,11 +221,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6929467800659905572}
     m_Modifications:
-    - target: {fileID: 5720796134927069577, guid: 2eb7b1eafb38eba4f88f410d19ff4a19,
-        type: 3}
-      propertyPath: m_Name
-      value: Pebble (18)
-      objectReference: {fileID: 0}
     - target: {fileID: 130188915255513059, guid: 2eb7b1eafb38eba4f88f410d19ff4a19,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -296,6 +291,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.22984043
       objectReference: {fileID: 0}
+    - target: {fileID: 5720796134927069577, guid: 2eb7b1eafb38eba4f88f410d19ff4a19,
+        type: 3}
+      propertyPath: m_Name
+      value: Pebble (18)
+      objectReference: {fileID: 0}
     - target: {fileID: 3655326493005432119, guid: 2eb7b1eafb38eba4f88f410d19ff4a19,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -316,11 +316,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6929467800659905572}
     m_Modifications:
-    - target: {fileID: 5720796134927069577, guid: 2eb7b1eafb38eba4f88f410d19ff4a19,
-        type: 3}
-      propertyPath: m_Name
-      value: Pebble (17)
-      objectReference: {fileID: 0}
     - target: {fileID: 130188915255513059, guid: 2eb7b1eafb38eba4f88f410d19ff4a19,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -391,6 +386,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.22984046
       objectReference: {fileID: 0}
+    - target: {fileID: 5720796134927069577, guid: 2eb7b1eafb38eba4f88f410d19ff4a19,
+        type: 3}
+      propertyPath: m_Name
+      value: Pebble (17)
+      objectReference: {fileID: 0}
     - target: {fileID: 3655326493005432119, guid: 2eb7b1eafb38eba4f88f410d19ff4a19,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -411,11 +411,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6929467800659905572}
     m_Modifications:
-    - target: {fileID: 9040728404927506730, guid: 2c758afc792335c4a94d0401432f7803,
-        type: 3}
-      propertyPath: m_Name
-      value: Rock (900)
-      objectReference: {fileID: 0}
     - target: {fileID: 8728409944438136855, guid: 2c758afc792335c4a94d0401432f7803,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -486,6 +481,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.08582407
       objectReference: {fileID: 0}
+    - target: {fileID: 9040728404927506730, guid: 2c758afc792335c4a94d0401432f7803,
+        type: 3}
+      propertyPath: m_Name
+      value: Rock (900)
+      objectReference: {fileID: 0}
     - target: {fileID: 4121479007222700091, guid: 2c758afc792335c4a94d0401432f7803,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -506,11 +506,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6929467800659905572}
     m_Modifications:
-    - target: {fileID: 9040728404927506730, guid: 2c758afc792335c4a94d0401432f7803,
-        type: 3}
-      propertyPath: m_Name
-      value: Rock (901)
-      objectReference: {fileID: 0}
     - target: {fileID: 8728409944438136855, guid: 2c758afc792335c4a94d0401432f7803,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -580,6 +575,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0858241
+      objectReference: {fileID: 0}
+    - target: {fileID: 9040728404927506730, guid: 2c758afc792335c4a94d0401432f7803,
+        type: 3}
+      propertyPath: m_Name
+      value: Rock (901)
       objectReference: {fileID: 0}
     - target: {fileID: 4121479007222700091, guid: 2c758afc792335c4a94d0401432f7803,
         type: 3}
@@ -742,11 +742,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6929467800659905572}
     m_Modifications:
-    - target: {fileID: 5720796134927069577, guid: 2eb7b1eafb38eba4f88f410d19ff4a19,
-        type: 3}
-      propertyPath: m_Name
-      value: Pebble (19)
-      objectReference: {fileID: 0}
     - target: {fileID: 130188915255513059, guid: 2eb7b1eafb38eba4f88f410d19ff4a19,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -817,6 +812,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.31127286
       objectReference: {fileID: 0}
+    - target: {fileID: 5720796134927069577, guid: 2eb7b1eafb38eba4f88f410d19ff4a19,
+        type: 3}
+      propertyPath: m_Name
+      value: Pebble (19)
+      objectReference: {fileID: 0}
     - target: {fileID: 3655326493005432119, guid: 2eb7b1eafb38eba4f88f410d19ff4a19,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -837,11 +837,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6929467800659905572}
     m_Modifications:
-    - target: {fileID: 9040728404927506730, guid: 2c758afc792335c4a94d0401432f7803,
-        type: 3}
-      propertyPath: m_Name
-      value: Rock (899)
-      objectReference: {fileID: 0}
     - target: {fileID: 8728409944438136855, guid: 2c758afc792335c4a94d0401432f7803,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -911,6 +906,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.08582412
+      objectReference: {fileID: 0}
+    - target: {fileID: 9040728404927506730, guid: 2c758afc792335c4a94d0401432f7803,
+        type: 3}
+      propertyPath: m_Name
+      value: Rock (899)
       objectReference: {fileID: 0}
     - target: {fileID: 4121479007222700091, guid: 2c758afc792335c4a94d0401432f7803,
         type: 3}
