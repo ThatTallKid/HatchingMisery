@@ -16,7 +16,7 @@ public class FeedV2 : MonoBehaviour   // Venus
             feedtime = feedtime + Time.deltaTime;
         }
 
-        if (feedtime > 4)
+        if (feedtime > 8)
         {
             PlayerPrefs.SetInt("currentfeed", PlayerPrefs.GetInt("currentfeed")+GrainAmount);
             Debug.Log("saving score as " + PlayerPrefs.GetInt("currentfeed"));

@@ -14,6 +14,7 @@ public class LevelScoreScreen : MonoBehaviour
     public int intchicksleft;
     public string strchicksleft;
     public GameObject[] ChickCounter;
+    public int previouschicks;
     public float gabetime;
 
     void Start()
@@ -32,28 +33,31 @@ public class LevelScoreScreen : MonoBehaviour
         feedscore = PlayerPrefs.GetInt("currentfeed");
         intchicksleft = PlayerPrefs.GetInt("chicksleft");
 
-        Debug.Log("number here = " + intchicksleft);
+        
+        previouschicks = intchicksleft;
 
         // this was sometimes returning negative numbers thanks to the number of feeding zones being variable
         if (intchicksleft * 10 > feedscore)
         {
             FedChicks = Mathf.FloorToInt(Mathf.Min((float)intchicksleft, (float)feedscore / 10));
+            intchicksleft = FedChicks;
         }
 
-        intchicksleft = FedChicks;
+        FedChicks = intchicksleft;
         //txtdeadchicks.text = (intchicksleft - FedChicks).ToString();
 
 
         Debug.Log("number here = " + intchicksleft);
-        foreach (GameObject obj in ChickCounter)
+
+        if (FedChicks >= 1)
         {
-            obj.SetActive(false);
+            StartCoroutine(End());
         }
-        ChickCounter[intchicksleft].SetActive(true);
+
         //txtchicksLeft.text = intchicksleft.ToString();
-        if (FedChicks < 1 )
+        if (FedChicks < 1)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(8);
 
         }
 
@@ -65,4 +69,26 @@ public class LevelScoreScreen : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
+
+
+    IEnumerator End()
+    {
+        for (int i = previouschicks; i >= intchicksleft; i--)
+        {
+            foreach (GameObject obj in ChickCounter)
+            {
+                obj.SetActive(false);
+            }
+            ChickCounter[i].SetActive(true);
+            yield return new WaitForSeconds(1);
+            Debug.Log("hi number : " + i);
+            Debug.Log("hi bumbler : " + intchicksleft);
+        }
+        ChickCounter[intchicksleft].SetActive(true);
+        yield return new WaitForSeconds(3);
+        NextLevel();
+    }
+
+
 }

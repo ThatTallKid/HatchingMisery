@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;   // This is for the events
 
@@ -18,6 +19,8 @@ public class GameTime : MonoBehaviour
     public GameObject ScoreScreen;
     public GameObject Hen;
     public GameObject Hawk;
+    public Image Score;
+
 
     // V's code
     public float AfternoonTime;
@@ -42,6 +45,7 @@ public class GameTime : MonoBehaviour
        }
         */
         PlayerPrefs.SetInt("currentfeed", 0);
+        Score.GetComponent<CanvasRenderer>().SetAlpha(0.1f);
 
     }
 
@@ -64,7 +68,7 @@ public class GameTime : MonoBehaviour
         }
         ChickUI[PlayerPrefs.GetInt("chicksleft")].SetActive(true);
 
-        
+
         // todo step by step logic will be needed in the tutorial to teach each part of the game in turn
         if (!tutorial && !finallevel)
         {
@@ -72,24 +76,23 @@ public class GameTime : MonoBehaviour
             gametime = gametime + Time.deltaTime * 1;
             if (PlayerPrefs.GetInt("chicksleft") < 1)
             {
-               ScoreScreen.SetActive(true);
-               Hawk.SetActive(false);
-               Hen.SetActive(false);
-                
-            }
+                ScoreScreen.SetActive(true);
+                Hawk.SetActive(false);
+                Hen.SetActive(false);
 
-            if (gametime > 60)
+            }
+            if (gametime > 178)
+            {
+                Score.CrossFadeAlpha(4f, 4f, false);
+            }
+            if (gametime > 180)
             {
                 //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 ScoreScreen.SetActive(true);
                 Hawk.SetActive(false);
                 Hen.SetActive(false);
             }
-            if (gametime > 65)
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
-            }
 
             // V's code
             if ((int)gametime == AfternoonTime)

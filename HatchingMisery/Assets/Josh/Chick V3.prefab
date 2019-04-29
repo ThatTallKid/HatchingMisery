@@ -168,10 +168,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: chick
       objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: f48135149de569448aa1ad1b36620e28, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 44ef00533183b8c4e8707135d24c547d, type: 2}
     - target: {fileID: 400004, guid: f48135149de569448aa1ad1b36620e28, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -228,6 +224,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: f48135149de569448aa1ad1b36620e28, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 87d2839b9ede1de42a0052f1525a4a95, type: 2}
+    - target: {fileID: 9500000, guid: f48135149de569448aa1ad1b36620e28, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 44ef00533183b8c4e8707135d24c547d, type: 2}
     - target: {fileID: 13700000, guid: f48135149de569448aa1ad1b36620e28, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
