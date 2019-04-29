@@ -119,9 +119,9 @@ MonoBehaviour:
   hawkCall: {fileID: 200786426}
   chickScream: {fileID: 200786425}
   startswoopheight: 30
-  idletime: 7
-  warningtime: 7
-  totalswooptime: 5
+  idletime: 3
+  warningtime: 3
+  totalswooptime: 4
   maxchicksperswoop: 2
   Chickcount: []
 --- !u!65 &6755478656800583185

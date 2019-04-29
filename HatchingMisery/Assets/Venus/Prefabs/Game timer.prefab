@@ -44,9 +44,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorial: 0
+  finallevel: 0
   ChicksLeft: 0
   gametime: 0
   UniqueChick: {fileID: 0}
   Chicks: []
-  AfternoonTime: 0
-  EveningTime: 0
+  chickstartgameamount: 20
+  ChickUI: []
+  ScoreScreen: {fileID: 0}
+  Hen: {fileID: 0}
+  Hawk: {fileID: 0}
+  Score: {fileID: 0}
+  AfternoonTime: 90
+  EveningTime: 160

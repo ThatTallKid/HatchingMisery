@@ -85,5 +85,5 @@ MonoBehaviour:
   MorningColor: {r: 0.95294124, g: 1, b: 0, a: 0}
   AfternoonColor: {r: 1, g: 1, b: 1, a: 0}
   EveningColor: {r: 1, g: 0.5254902, b: 0, a: 0}
-  MorningAngle: 6
-  RotationSpeed: 2
+  MorningAngle: 50
+  RotationSpeed: 1
