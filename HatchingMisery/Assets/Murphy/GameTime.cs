@@ -68,13 +68,18 @@ public class GameTime : MonoBehaviour
             obj.SetActive(false);
         }
         ChickUI[PlayerPrefs.GetInt("chicksleft")].SetActive(true);
-        gametime = gametime + Time.deltaTime * 1;
+
+        if (Input.GetKeyDown(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.PageUp))
+        {
+            SceneManager.LoadScene(0);
+        }
+        
 
         // todo step by step logic will be needed in the tutorial to teach each part of the game in turn
         if (!tutorial && !finallevel)
         {
 
-            
+            gametime = gametime + Time.deltaTime * 1;
             if (PlayerPrefs.GetInt("chicksleft") < 1)
             {
                 ScoreScreen.SetActive(true);
