@@ -46,7 +46,7 @@ public class GameTime : MonoBehaviour
         */
         PlayerPrefs.SetInt("currentfeed", 0);
 
-        Score.CrossFadeAlpha(0.1f, 4f, false);
+        Score.CrossFadeAlpha(0f, 4f, false);
 
     }
 
@@ -68,13 +68,13 @@ public class GameTime : MonoBehaviour
             obj.SetActive(false);
         }
         ChickUI[PlayerPrefs.GetInt("chicksleft")].SetActive(true);
-
+        gametime = gametime + Time.deltaTime * 1;
 
         // todo step by step logic will be needed in the tutorial to teach each part of the game in turn
         if (!tutorial && !finallevel)
         {
 
-            gametime = gametime + Time.deltaTime * 1;
+            
             if (PlayerPrefs.GetInt("chicksleft") < 1)
             {
                 ScoreScreen.SetActive(true);
