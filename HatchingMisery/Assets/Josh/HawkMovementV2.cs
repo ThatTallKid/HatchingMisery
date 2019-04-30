@@ -100,7 +100,7 @@ public class HawkMovementV2 : MonoBehaviour
             target = temptarget;
             RaycastHit hit;
             //todo uses height of collider to tell if it is shelter, change to tag later
-            if (Physics.Raycast(target + (5 * Vector3.up), Vector3.down, out hit))
+            if (Physics.Raycast(target + (20 * Vector3.up), Vector3.down, out hit))
             {
                 if (hit.collider.gameObject.layer == LayerMask.NameToLayer("HawkCol"))
                 {
