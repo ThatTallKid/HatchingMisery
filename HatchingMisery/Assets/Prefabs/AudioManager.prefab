@@ -338,6 +338,6 @@ MonoBehaviour:
   musicTrack2: {fileID: 1076441623533151478}
   musicTrack3: {fileID: 3046461143184279499}
   chicksLeft: 0
-  chickCountTrack2: 8
-  chickCountTrack3: 6
+  chickCountTrack2: 15
+  chickCountTrack3: 5
   fadeoutRate: 0.125
