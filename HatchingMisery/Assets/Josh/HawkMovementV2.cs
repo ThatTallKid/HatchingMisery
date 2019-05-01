@@ -59,7 +59,7 @@ public class HawkMovementV2 : MonoBehaviour
     private Vector3 startswooppoint = Vector3.zero;
     private Vector3 endswooppoint = Vector3.zero;
     private float searchtimer = 0;
-    private int heldchicks = 0;
+    public int heldchicks = 0;
 
     private GameTime chicks;
 
