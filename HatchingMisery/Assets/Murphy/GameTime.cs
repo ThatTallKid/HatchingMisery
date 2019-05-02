@@ -46,7 +46,7 @@ public class GameTime : MonoBehaviour
         */
         PlayerPrefs.SetInt("currentfeed", 0);
 
-        Score?.CrossFadeAlpha(0f, 4f, false);
+        Score.CrossFadeAlpha(0f, 4f, false);
 
     }
 
